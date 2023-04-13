@@ -1,0 +1,38 @@
+* {
+    border: 1px solid red;
+}
+.best-deals {
+    padding: 90px 0px 90px 0px;
+    position: relative;
+}
+.best-deals__header {
+    display: block;
+    flex-basis: 100%;
+    padding: 0px 15px 0px 15px;
+}
+.header__title {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+.header__subtitle {
+    display: block;
+    font-family: var(--font-for-subtitle);
+    font-size: 34px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.header__decor-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.header__adv-message {
+    display: block;
+    font-family: var(--font-main);
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
