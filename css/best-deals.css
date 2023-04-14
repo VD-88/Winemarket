@@ -21,7 +21,6 @@
     font-size: 34px;
     margin-top: 20px;
     text-align: center;
-    
 }
 .header__decor-container {
     display: flex;
@@ -59,9 +58,13 @@
 }
 .item__picture {
     width: 100%;
+    border-radius: 15%;
 }
+.item__picture:hover {
+    animation: round-border 3s forwards infinite;
+  }
 .item__name {
-    margin-top: 8px;
+    margin-top: 15px;
 }
 .item__price {
     font-weight: 700;
@@ -70,6 +73,7 @@
 }
 .item__button {
     margin-top: 24px;
+    margin-bottom: 24px;
     padding: 16px 25px 16px 25px;
     background-color: var(--color-special);
     border: 3px;
@@ -116,3 +120,20 @@
     opacity: 1;
     transform: scale(1.5);
 }
+
+@keyframes round-border {
+    0% {
+      border-radius: 15%;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    50% {
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    100% {
+      border-radius: 15%;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+  }
