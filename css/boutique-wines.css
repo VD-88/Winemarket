@@ -1,4 +1,5 @@
-.header__socials svg {
-    width: 24px;
-    height: 24px;
+.header__socials {
+    margin-bottom: -15px;
+    margin-right: -7.5px;
+    margin-left: -7.5px
 }
