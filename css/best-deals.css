@@ -84,6 +84,7 @@
 .carousel a {
     color: var(--font-main);
     text-decoration: none;
+    cursor: auto;
 }
 .carousel li {
     list-style-type: none;
