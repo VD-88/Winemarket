@@ -1,0 +1,9 @@
+.testimonials {
+    background-image: url(../img/bunch-grape.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.award-card__image {
+    background-color: #211b18;
+}

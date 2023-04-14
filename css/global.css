@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* outline: 1px solid red; */
 }
 
 :root {
+    --font-main: 'Rubik', sans-serif;
+    --font-for-title: 'Great Vibes', monospace;
+    --font-for-subtitle: 'Prata', serif;
+    --color-main: #fff;
+    --color-support: rgb(137, 128, 130);
+    --color-for-cart: #000;
+    --color-special: #c8693a;
+    --сolor-background-main: rgb(38, 30, 28);
+    --color-background-footer: rgb(19, 15, 14);
+    --color-background-contact-us: rgb(27, 22, 19);
+    background-color: var(--сolor-background-main);
+    color: var(--color-main);
+    font-family: var(--font-main);
     scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: var(--font-for-title);
+    color: var(--color-special);
+    font-weight: normal;
 }
 
 img {

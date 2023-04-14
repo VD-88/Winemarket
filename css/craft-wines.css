@@ -1,0 +1,79 @@
+.craft-wines__name {
+    text-align: center;
+    font-size: 14px;
+    margin: 100px 0px 10px 0px;
+}
+
+.craft-wines__title {
+    text-align: center;
+    font-family: var(--font-for-subtitle);
+    font-size: 34px;
+    margin: 15px 0px 15px 0px;
+}
+
+.craft-wines__decor {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+} 
+
+.craft-wines__subtitle {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 18px;
+    margin: 15px 30px 80px 30px;
+    line-height: 1.6;
+}
+
+.craft-wines__type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0px 50px 0px 30px;
+}
+
+.craft-wines__type_name {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0px 20px 10px 20px;
+}
+
+.craft-wines__line {
+    margin: 0px 30px 30px 30px;
+    
+}
+
+.craft-wines__red {
+    display: grid;
+    justify-items: center;
+}
+
+.craft-wines__white {
+    display: grid;
+    justify-items: center;
+}
+
+.red-wine__name {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 18px;
+    margin: 20px 0px 20px 0px;
+}
+
+.red-wine__price {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+}
+
+.red-wine__button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0px 40px 0px;
+}
