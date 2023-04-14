@@ -1,3 +1,8 @@
+.header__banner-text {
+    color: #c8693a;
+    font: 'Great Vibes';
+}
+
 @media (min-width: 500px) {
     .header__menu {
         display: flex;
