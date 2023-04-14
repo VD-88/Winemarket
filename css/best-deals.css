@@ -1,11 +1,14 @@
 .best-deals {
-    padding: 90px 0px 90px 0px;
+    padding: 90px 0px 50px 0px;
     position: relative;
 }
-.best-deals__header {
+.best-deals__container {
+    padding: 0px 24px 0px 24px;
+}
+.container__header {
     display: block;
-    flex-basis: 100%;
     padding: 0px 15px 0px 15px;
+    margin: 0px -15px 0px -15px; /*wtf*/
 }
 .header__title {
     display: block;
@@ -25,11 +28,63 @@
     justify-content: center;
     margin-top: 25px;
 }
-
+.header__grape-decor {
+    object-fit: contain;
+    object-position: 50% 50%;
+}
 .header__adv-message {
     display: block;
     font-family: var(--font-main);
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
+}
+.container__carousel {
+    display: block;
+    margin-top: 45px;
+}
+.wine-navigation__wine-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+}
+.wine-list__card {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    justify-content: baseline;
+    text-align: center;
+}
+.item__picture {
+    width: 100%;
+}
+.item__name {
+    margin-top: 8px;
+}
+.item__price {
+    font-weight: 700;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.item__button {
+    margin-top: 24px;
+    padding: 16px 25px 16px 25px;
+    background-color: var(--color-special);
+    border: 3px;
+    border-radius: 2px;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-main);
+    cursor: pointer;
+    width: 133.359px;
+}
+.carousel a {
+    color: var(--font-main);
+    text-decoration: none;
+}
+.carousel li {
+    list-style-type: none;
 }

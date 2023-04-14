@@ -1,69 +1,72 @@
 <!-- made by Yaroslav Tkachyk -->
 <section class="best-deals" id="best-deals">
-    <div class="best-deals__header header">
-        <h2 class="header__title">Best deals</h2>
-        <p class="header__subtitle">Wines to Every Table</p>
-        <figure class="header__decor-container">
-            <img src="img/grape-decor.svg" alt="grape decor" class="header__grape-decor">
-        </figure>
-        <p class="header__adv-message">Shop our best-selling wines. Click on the product images to see the details.</p>
-    </div>
-    <div class="best-deals__carousel carousel">
-        <nav class="carousel__wine-navigation wine-navigation">
-            <ul class="wine-navigation__wine-list wine-list">
-                <li class="wine-list__card card">
-                    <figure class="card__cabernet cabernet">
-                        <a href="product-page.html">
-                            <img class="cabernet__pic wine-picture" src="img/carousel-item-cabernet.jpg" 
-                                alt="Cabernet" width="240">
-                            <figcaption class="cabernet__naming wine-naming">Cabernet</figcaption>
-                        </a>
-                        <p class="cabernet__price wine-price">17,00USD</p>
-                        <button class="cabernet__button add-to-cart-button" type="submit">
-                            Add to cart
-                        </button>
-                    </figure>
-                </li>
-                <li class="wine-list__card card">
-                    <figure class="card__sauvignon-blanc">
-                        <a href="product-page.html">
-                            <img class="sauvignon-blanc__pic wine-picture" src="img/carousel-item-sauvignon-blanc.jpg" 
-                                alt="Sauvignon Blanc" width="240">
-                            <figcaption class="sauvignon-blanc__naming wine-naming">Sauvignon Blanc</figcaption>
-                        </a>
-                        <p class="sauvignon-blanc__price wine-price">12,00USD</p>
-                        <button class="sauvignon-blanc__button add-to-cart-button" type="submit">
-                            Add to cart
-                        </button>
-                    </figure>
-                </li>
-                <li class="wine-list__card card">
-                    <figure class="wine-item__syrah">
-                        <a href="product-page.html">
-                            <img class="syrah__pic wine-picture" src="img/carousel-item-syrah.jpg" 
-                                alt="Syrah" width="240">
-                            <figcaption class="syrah__naming wine-naming">Syrah</figcaption>
-                        </a>
-                        <p class="syrah__price wine-price">13,00USD</p>
-                        <button class="syrah__button add-to-cart-button" type="submit">
-                            Add to cart
-                        </button>
-                    </figure>
-                </li>
-                <li class="wine-list__card card">
-                    <figure class="wine-item__pinot-grigio">
-                        <a href="product-page.html">
-                            <img class="pinot-grigio__pic wine-picture" src="img/carousel-item-pinot-grigio.jpg"
-                                alt="Pinot Grigio" width="240">
-                            <figcaption class="pinot-noir__naming wine-naming">Pinot Grigio</figcaption>
-                        </a>
-                        <p class="pinot-grigio__price wine-price">10,00USD</p>
-                        <button class="pinot-grigio__button add-to-cart-button" type="submit">
-                            Add to cart
-                        </button>
-                    </figure>
-                </li>
-            </ul>
-        </nav>
+    <div class="best-deals__container container">
+        <div class="container__header header">
+            <h2 class="header__title">Best deals</h2>
+            <p class="header__subtitle">Wines to Every Table</p>
+            <figure class="header__decor-container">
+                <img src="img/grape-decor.svg" alt="grape decor" class="header__grape-decor">
+            </figure>
+            <p class="header__adv-message">Shop our best-selling wines. Click on the product images to see the details.
+            </p>
+        </div>
+        <div class="container__carousel carousel">
+            <nav class="carousel__wine-navigation wine-navigation">
+                <ul class="wine-navigation__wine-list wine-list">
+                    <li class="wine-list__card card">
+                        <figure class="card__cabernet item">
+                            <a href="product-page.html" class="item-link">
+                                <img class="item__picture" src="img/carousel-item-cabernet.jpg"
+                                    alt="Cabernet" width="240">
+                                <figcaption class="item__name">Cabernet</figcaption>
+                            </a>
+                            <p class="item__price">17,00USD</p>
+                            <button class="item__button add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+                        </figure>
+                    </li>
+                    <li class="wine-list__card card">
+                        <figure class="card__sauvignon-blanc item">
+                            <a href="product-page.html" class="shop-link">
+                                <img class="item__picture"
+                                    src="img/carousel-item-sauvignon-blanc.jpg" alt="Sauvignon Blanc" width="240">
+                                <figcaption class="item__name">Sauvignon Blanc</figcaption>
+                            </a>
+                            <p class="item__price">12,00USD</p>
+                            <button class="item__button add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+                        </figure>
+                    </li>
+                    <li class="wine-list__card card">
+                        <figure class="wine-item__syrah">
+                            <a href="product-page.html" class="shop-link">
+                                <img class="item__picture" src="img/carousel-item-syrah.jpg" alt="Syrah"
+                                    width="240">
+                                <figcaption class="item__name">Syrah</figcaption>
+                            </a>
+                            <p class="item__price">13,00USD</p>
+                            <button class="item__button add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+                        </figure>
+                    </li>
+                    <li class="wine-list__card card">
+                        <figure class="wine-item__pinot-grigio">
+                            <a href="product-page.html" class="shop-link">
+                                <img class="item__picture" src="img/carousel-item-pinot-grigio.jpg"
+                                    alt="Pinot Grigio" width="240">
+                                <figcaption class="item__name">Pinot Grigio</figcaption>
+                            </a>
+                            <p class="item__price">10,00USD</p>
+                            <button class="item__button add-to-cart-button" type="submit">
+                                Add to cart
+                            </button>
+                        </figure>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </section>
