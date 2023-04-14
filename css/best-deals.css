@@ -85,6 +85,9 @@
     cursor: pointer;
     width: 133.359px;
 }
+.item__button:hover {
+    opacity: 0.95;
+}
 .carousel a {
     color: var(--font-main);
     text-decoration: none;
