@@ -1,0 +1,6 @@
+@media (min-width: 500px) {
+    .header__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
