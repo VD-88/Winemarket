@@ -13,7 +13,7 @@
     padding: 0px 15px 0px 15px;
     margin: 0px -15px 0px -15px; /*wtf*/;
 }
-.header__jn-title {
+.header__jn-title { 
     display: block;
     font-size: 14px;
     text-align: left;
