@@ -1,4 +1,12 @@
-.header__socials svg {
-    width: 24px;
-    height: 24px;
+.header__banner-text {
+    color: #c8693a;
+    font: 'Great Vibes';
+}
+
+@media (min-width: 500px) {
+    .header__menu {
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
