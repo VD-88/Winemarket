@@ -64,6 +64,10 @@
 }
 
 .header__banner {
+    padding-left: 80px;
+}
+
+.background {
     background-image: url("img/header-wine.jpg");
     background-size: cover;
     display: flex;
