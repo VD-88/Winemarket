@@ -26,14 +26,6 @@
 }
 
 .header__banner {
-    background-image: url("img/header-wine.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    min-height: fit-content;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .header__banner-buttons {
@@ -71,4 +63,17 @@
     display: flex;
     justify-content: right;
     margin-top: 25px;
+}
+
+.header {
+    background-image: url("img/header-wine.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
 }
