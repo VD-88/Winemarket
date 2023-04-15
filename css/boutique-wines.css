@@ -26,11 +26,6 @@
 }
 
 .header__banner {
-    font-size: 48px;
-    line-height: 48px;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
     background-image: url("img/header-wine.jpg");
     background-size: cover;
     background-attachment: fixed;
