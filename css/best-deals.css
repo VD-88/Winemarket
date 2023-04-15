@@ -58,6 +58,7 @@
     background-color: var(--color-background-main);
     font-family: var(--font-main);
     color: var(--color-main);
+    border: none;
 }
 .item__picture {
     width: 100%;
