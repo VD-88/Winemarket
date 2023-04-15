@@ -1,5 +1,5 @@
-.header__menu-item button {
-    text-align: left;
+.shop-now {
+    text-align: center;
     font-family: var(--font-main);
     color: var(--color-main);
     font-size: 15px;
@@ -9,34 +9,27 @@
     height: 40px;
     border: 0px;
     border-radius: 3px;
+    margin-right: 5 px;
 
 }
 
-.header__menu-item button {
-    text-align: right;
+
+.learn-more {
+    text-align: center;
     font-family: var(--font-main);
-    --color-main: #fff;
+    color: white;
     font-size: 15px;
     font-weight: 700;
-    background-color: var(--color-special);
     width: 120px;
     height: 40px;
     border: 0px;
     border-radius: 3px;
 }
 
-.header__banner {
-    font-size: 48px;
-    line-height: 48px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .header__banner-buttons {
 
     display: flex;
+    justify-content: space-around;
     margin: 10px 0px 40px 0px;
 
 }
@@ -68,5 +61,29 @@
     display: flex;
     justify-content: right;
     margin-top: 25px;
+}
 
+.header__socials {
+    display: flex;
+    width: 32px;
+    gap: 10px;
+}
+
+.header__banner {
+    padding-left: 80px;
+}
+
+.background {
+    background-image: url("img/header-wine.jpg");
+    background-size: cover;
+    display: flex;
+    background-position: 50% 50%;
+    min-height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    opacity: 0,5;
 }
