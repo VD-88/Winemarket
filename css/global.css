@@ -23,6 +23,7 @@
     --сolor-background-main: rgb(38, 30, 28);
     --color-background-footer: rgb(19, 15, 14);
     --color-background-contact-us: rgb(27, 22, 19);
+    --color-background-join-newsletter: rgb(26,21,18);
     background-color: var(--сolor-background-main);
     color: var(--color-main);
     font-family: var(--font-main);
