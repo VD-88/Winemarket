@@ -72,6 +72,7 @@
 
 }
  .header-wine {
+background-image: url(img/pinot-noir.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
