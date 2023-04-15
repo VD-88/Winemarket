@@ -25,6 +25,8 @@
     --color-background-contact-us: rgb(27, 22, 19);
     --color-background-join-newsletter: rgb(26,21,18);
     --color-background-email: rgba(73,73,73,0.24);
+    --color-border-placeholder: rgb(242,239,233);
+    --color-for-divider: rgb(58,54,51);
     scroll-behavior: smooth;
 }
 

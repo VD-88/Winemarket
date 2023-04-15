@@ -5,19 +5,25 @@
     font-family: var(--font-main);
     color: var(--color-main);
 }
+
 .join-newsletter__container {
     padding: 0px 24px 0px 24px;
 }
+
 .container__jn-header {
     display: block;
     padding: 0px 15px 0px 15px;
-    margin: 0px -15px 0px -15px; /*wtf*/;
+    margin: 0px -15px 0px -15px;
+    /*wtf*/
+    ;
 }
-.header__jn-title { 
+
+.header__jn-title {
     display: block;
     font-size: 14px;
     text-align: left;
 }
+
 .header__jn-subtitle {
     display: block;
     font-family: var(--font-for-subtitle);
@@ -25,6 +31,7 @@
     margin-top: 20px;
     text-align: left;
 }
+
 .header__jn-adv-message {
     display: block;
     font-family: var(--font-main);
@@ -32,26 +39,44 @@
     margin-top: 25px;
     text-align: left;
 }
+
 .container__jn-content {
     display: block;
     padding: 0px 15px 0px 15px;
-    margin: 50px -15px 0px -15px; /*wtf*/;
+    margin: 50px -15px 0px -15px;
+    /*wtf*/
+    ;
 }
+
 .content__jn-form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .contact-form__input-email {
     margin-top: 12px;
     padding: 16px 25px 16px 25px;
     background-color: var(--color-background-email);
     border-radius: 2px;
     text-align: start;
+    border: none;
+    color: var(--color-main);
     font-size: 15px;
     font-weight: 400;
-    cursor: text;
 }
+
+.contact-form__input-email::placeholder {
+    cursor: text;
+    opacity: 0.8;
+}
+
+.contact-form__input-email:focus {
+    padding: 14px 23px 14px 23px;
+    outline: 1.5px solid var(--color-main);
+    border: 2px solid rgb(59, 153, 252);
+}
+
 .contact-form__submit {
     margin-top: 24px;
     padding: 16px 25px 16px 25px;
@@ -64,6 +89,17 @@
     font-weight: 700;
     color: var(--color-main);
 }
+
 .contact-form__submit:hover {
+    content: "\01F60A";
     opacity: 0.9;
+}
+
+.container__jn-footer {
+    margin: 45px -15px 0px -15px;
+    padding: 15px 15px 15px 15px;
+}
+
+.jn-footer__divider {
+    border-top: 1px solid white;
 }
