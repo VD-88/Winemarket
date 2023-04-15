@@ -76,4 +76,7 @@ background-image: url(img/pinot-noir.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
+position: fixed;
+max-width: 100%;
+height: auto;
 }
