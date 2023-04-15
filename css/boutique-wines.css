@@ -73,9 +73,11 @@
 }
  .header-wine {
     background-image: url("img/header-wine.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
-    z-index: -1;
+    background-position: 50% 50%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
