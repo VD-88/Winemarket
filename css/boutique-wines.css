@@ -1,4 +1,4 @@
-.header__menu-item button {
+.shop-now {
     text-align: center;
     font-family: var(--font-main);
     color: var(--color-main);
@@ -9,17 +9,17 @@
     height: 40px;
     border: 0px;
     border-radius: 3px;
+    margin-right: 5 px;
 
 }
 
 
-.header__menu-item {
+.learn-more {
     text-align: center;
     font-family: var(--font-main);
     color: white;
     font-size: 15px;
     font-weight: 700;
-    background-color: var(--color-special);
     width: 120px;
     height: 40px;
     border: 0px;
