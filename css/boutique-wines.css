@@ -13,7 +13,7 @@
 }
 
 .header__menu-item button {
-    text-align: left;
+    text-align: right;
     font-family: var(--font-main);
     --color-main: #fff;
     font-size: 15px;
@@ -29,7 +29,7 @@
 .header__banner-text {
     display: block;
     font-size: 14px;
-    text-align: left;
+    text-align: right;
 }
 
 .header__banner-title {
@@ -37,7 +37,7 @@
     font-family: var(--font-for-subtitle);
     font-size: 34px;
     margin-top: 20px;
-    text-align: left;
+    text-align: right;
 }
 
 .header__banner-description {
@@ -45,5 +45,5 @@
     font-family: var(--font-main);
     font-size: 18px;
     margin-top: 20px;
-    text-align: center;
+    text-align: right;
 }
