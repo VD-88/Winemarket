@@ -28,6 +28,7 @@
     margin-top: 25px;
 }
 .header__grape-decor {
+    height: 32px;
     object-fit: contain;
     object-position: 50% 50%;
 }
