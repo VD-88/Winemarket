@@ -2,6 +2,8 @@
     padding: 90px 0px 15px 0px;
     position: relative;
     background-color: var(--color-background-join-newsletter);
+    font-family: var(--font-main);
+    color: var(--color-main);
 }
 .join-newsletter__container {
     padding: 0px 24px 0px 24px;
@@ -29,4 +31,39 @@
     font-size: 18px;
     margin-top: 25px;
     text-align: left;
+}
+.container__jn-content {
+    display: block;
+    padding: 0px 15px 0px 15px;
+    margin: 50px -15px 0px -15px; /*wtf*/;
+}
+.content__jn-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contact-form__input-email {
+    margin-top: 12px;
+    padding: 16px 25px 16px 25px;
+    background-color: var(--color-background-email);
+    border-radius: 2px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: text;
+}
+.contact-form__submit {
+    margin-top: 24px;
+    padding: 16px 25px 16px 25px;
+    background-color: var(--color-special);
+    border: 3px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-main);
+}
+.contact-form__submit:hover {
+    opacity: 0.9;
 }

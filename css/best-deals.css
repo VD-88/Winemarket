@@ -1,6 +1,9 @@
 .best-deals {
     padding: 90px 0px 50px 0px;
     position: relative;
+    background-color: var(--color-background-main);
+    font-family: var(--font-main);
+    color: var(--color-main);
 }
 .best-deals__container {
     padding: 0px 24px 0px 24px;
