@@ -68,7 +68,7 @@
 }
 
 .header__socials {
-    min-width: 991px; 
+    min-width: 991px;
     display: flex;
     width: 32px;
     gap: 10px;
@@ -97,7 +97,7 @@
 }
 
 .header__logo-container {
-    width: 176;
+    width: 176px;
     height: auto;
     display: block;
     max-width: 100%;
@@ -108,9 +108,9 @@
     box-sizing: border-box;
     overflow-clip-margin: content-box;
     overflow: clip;
-
 }
-.navbar navbar-expand-lg bg-body-tertiary {
+
+.header__nav {
     display: flex;
     min-width: 991px;
     list-style: none;
@@ -122,4 +122,5 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+
 }
