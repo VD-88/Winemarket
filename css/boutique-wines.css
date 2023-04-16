@@ -68,26 +68,28 @@
 }
 
 .header__socials {
-    min-width: 150px;
+    min-width: 100px;
     display: flex;
     width: 32px;
     gap: 15px;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     justify-content: flex-end;
     margin-right: 48px;
+    margin-left: 40 px;
 }
 
 .header__banner {
-   margin-right: 80px;
+    margin-top: 340;
+    margin-right: 480px;
+
 }
 
 .background {
     background-image: url("img/header-wine.jpg");
     background-size: cover;
     display: flex;
-    background-position: 50% 50%;
+    background-position: center center;
     min-height: 500px;
     justify-content: center;
     flex-direction: column;
@@ -95,8 +97,16 @@
     background-attachment: fixed;
 }
 
+
 .container {
     opacity: 0, 5;
+}
+
+.navbar-nav {
+    margin-left: 480px;
+    margin-right: 40px;
+    --color-background-main: rgb(38, 30, 28);
+
 }
 
 .header__logo-container {
@@ -104,7 +114,9 @@
     height: auto;
     display: block;
     max-width: 100%;
-    margin: 0;
+    margin-top: 40px;
+    margin-left: 440px;
+    margin-right: 480px;
     padding: 0;
     border: 0;
     object-fit: cover;
