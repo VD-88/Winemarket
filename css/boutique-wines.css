@@ -35,8 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 640.83px;
-    height: 52.5px;
+  
 
 }
 
@@ -45,8 +44,7 @@
     display: block;
     font-size: 14px;
     text-align: right;
-    width: 640.83px;
-    height: 39.19px;
+
 }
 
 .header__banner-title {
@@ -55,8 +53,7 @@
     font-size: 34px;
     margin-top: 20px;
     text-align: right;
-    width: 640.83px;
-    height: 201.59px;
+
 }
 
 .header__banner-description {
@@ -65,16 +62,13 @@
     font-size: 18px;
     margin-top: 20px;
     text-align: right;
-    width: 640.83px;
-    height: 30.59px;
+  
 }
 
 .header-decor {
     height: 32px;
     object-fit: contain;
     object-position: 50% 50%;
-    width: 640.83px;
-    height: 32px;
 
 }
 
@@ -111,14 +105,11 @@
 }
 
 .header__nav {
-
     --color-background-main: rgb(38, 30, 28);
-    width: 1246px;
-    height: 100px;
     position: fixed;
     top: 0;
-
-}
+    background-color: var(--color-background-main);
+    }
 
 .header__logo-container {
     width: 176px;
@@ -136,20 +127,11 @@
 
 .header__nav {
     display: flex;
-    min-width: 991px;
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+
 
 }
 
-.navbar-nav {
-    margin-left: 480px;
-    margin-right: 40px;
-}
