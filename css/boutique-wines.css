@@ -75,7 +75,7 @@
 .header__socials {
     min-width: 991px;
     display: flex;
-    justify-content: flex-end; /
+    justify-content: flex-end; 
     width: 32px;
     gap: 10px;
     margin: 0;
@@ -137,7 +137,7 @@
     
 }
 
-.navbar-header {
+.nnavbar-toggler {
     width: 60%;
 }
 
