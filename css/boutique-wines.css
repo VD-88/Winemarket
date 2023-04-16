@@ -144,4 +144,14 @@
   .header__blocks {
     display: flex;
   }
+
+  .header__banner {
+    order: 2;
+
+  }
+
+  .header__banner-buttons {
+    order: 1;
+
+  }
   
