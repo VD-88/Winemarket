@@ -7,14 +7,12 @@
     background-color: var(--color-special);
     width: 120px;
     height: 40px;
-    border: 0px;
+    border: none;
     border-radius: 3px;
-    margin-right: 5 px;
-
-}
-
-
-.learn-more {
+    margin-right: 5px;
+    }
+    
+    .learn-more {
     text-align: center;
     font-family: var(--font-main);
     color: white;
@@ -22,12 +20,11 @@
     font-weight: 700;
     width: 120px;
     height: 40px;
-    border: 0px;
+    border: none;
     border-radius: 3px;
-}
-
-.header__banner-buttons {
-
+    }
+    
+    .header__banner-buttons {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -35,40 +32,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-
-.header__banner-text {
+    }
+    
+    .header__banner-text {
     display: block;
     font-size: 14px;
     text-align: right;
-}
-
-.header__banner-title {
+    }
+    
+    .header__banner-title {
     display: block;
     font-family: var(--font-for-subtitle);
     font-size: 34px;
     margin-top: 20px;
     text-align: right;
-}
-
-.header__banner-description {
+    }
+    
+    .header__banner-description {
     display: block;
     font-family: var(--font-main);
     font-size: 18px;
     margin-top: 20px;
     text-align: right;
-}
-
-.header-decor {
+    }
+    
+    .header-decor {
     height: 32px;
     object-fit: contain;
     object-position: 50% 50%;
-
-}
-
-.header__socials {
+    }
+    
+    .header__socials {
     min-width: 100px;
     display: flex;
     width: 32px;
@@ -77,16 +71,15 @@
     box-sizing: border-box;
     justify-content: flex-end;
     margin-right: 48px;
-    margin-left: 40 px;
-}
-
-.header__banner {
-    margin-top: 340;
+    margin-left: 40px;
+    }
+    
+    .header__banner {
+    margin-top: 340px; /* added "px" unit */
     margin-right: 480px;
-
-}
-
-.background {
+    }
+    
+    .background {
     background-image: url("img/header-wine.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,25 +92,22 @@
     align-items: center;
     background-attachment: fixed;
     background-clip: border-box;
-    padding: 20px;
     margin: 0 auto;
-}
-
-
-.container {
-    opacity: 0, 5;
-}
-
-.navbar-nav {
+    }
+    
+    .container {
+    opacity: 0.5; /* corrected the comma to a decimal point */
+    }
+    
+    .navbar-nav {
     margin-left: 480px;
     margin-right: 40px;
     --color-background-main: rgb(38, 30, 28);
     width: 1246px;
     height: 100px;
-
-}
-
-.header__logo-container {
+    }
+    
+    .header__logo-container {
     width: 176px;
     height: auto;
     display: block;
@@ -129,9 +119,9 @@
     box-sizing: border-box;
     overflow-clip-margin: content-box;
     overflow: clip;
-}
-
-.header__nav {
+    }
+    
+    .header__nav {
     display: flex;
     min-width: 991px;
     list-style: none;
@@ -140,8 +130,5 @@
     box-sizing: border-box;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-
-}
+    margin-inline-start: 0px
+    }
