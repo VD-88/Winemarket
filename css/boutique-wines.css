@@ -73,6 +73,7 @@
     padding: 0;
     box-sizing: border-box;
     margin-right: 100px;
+    padding-left: 8px;
 
 }
 
@@ -133,9 +134,14 @@
     width: 50%;
     margin: 0 auto;
     float: right;
-}
 
-.header__banner-buttons {
+}
+.navbar {
+    max-width: 30%;
+  }
+  
+
+.header__block {
     display: flex;
     flex-direction: column;
   }
@@ -143,4 +149,5 @@
   .header__banner-description {
     margin-bottom: 10px;
   }
+  
   
