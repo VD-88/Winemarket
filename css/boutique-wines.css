@@ -73,7 +73,7 @@
 }
 
 .header__socials {
-    min-width: 991px;
+    max-width: 100px;
     display: flex;
     justify-content: flex-end; 
     width: 32px;
@@ -82,6 +82,7 @@
     padding: 0;
     box-sizing: border-box;
     margin-right: 400px; 
+    margin-top: 36px;
 }
 
 
@@ -139,6 +140,6 @@
 }
 
 .navbar-toggler {
-    width: 60%;
+    width: 480px
 }
 
