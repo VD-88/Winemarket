@@ -42,11 +42,14 @@
 }
 
 .header__banner-title {
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-align: left;
     display: block;
     font-family: var(--font-for-subtitle);
     font-size: 34px;
     margin-top: 20px;
-    text-align: right;
 }
 
 .header__banner-description {
@@ -58,6 +61,8 @@
 }
 
 .header-decor {
+    --w-grid-item-v-padding: 40px;
+    --w-grid-item-h-padding: 30px;
     display: flex;
     justify-content: right;
     margin-top: 25px;
@@ -86,4 +91,26 @@
 
 .container {
     opacity: 0,5;
+}
+
+.header__logo-container {
+    background-color: transparent!important;
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+    font: inherit;
+    vertical-align: baseline;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.text-ui-brand-color {
+    color: var(--ui-brand-color)!important;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-align: left;
+    -webkit-box-direction: normal;
+    --w-grid-item-v-padding: 40px;
+    --w-grid-item-h-padding: 30px;
 }
