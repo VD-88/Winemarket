@@ -35,6 +35,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 640.83px;
+    height: 52.5px;
 
 }
 
@@ -43,6 +45,8 @@
     display: block;
     font-size: 14px;
     text-align: right;
+    width: 640.83px;
+    height: 39.19px;
 }
 
 .header__banner-title {
@@ -51,6 +55,8 @@
     font-size: 34px;
     margin-top: 20px;
     text-align: right;
+    width: 640.83px;
+    height: 201.59px;
 }
 
 .header__banner-description {
@@ -59,12 +65,16 @@
     font-size: 18px;
     margin-top: 20px;
     text-align: right;
+    width: 640.83px;
+    height: 30.59px;
 }
 
 .header-decor {
     height: 32px;
     object-fit: contain;
     object-position: 50% 50%;
+    width: 640.83px;
+    height: 32px;
 
 }
 
@@ -91,27 +101,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    background-position: center center;
-    width: 1246px;
-    height: 1044.88px;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     background-attachment: fixed;
     background-clip: border-box;
     margin: 0 auto;
-}
-
-
-.container {
-    opacity: 0, 5;
+    width: 100%;
+    height: 100vh;
 }
 
 .header__nav {
-   
+
     --color-background-main: rgb(38, 30, 28);
     width: 1246px;
     height: 100px;
+    position: fixed;
+    top: 0;
 
 }
 
