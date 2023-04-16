@@ -35,6 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    gap: 15px;
   
 
 }
@@ -141,17 +142,9 @@
     float: right; 
   }
 
-  .header__blocks {
-    display: flex;
+  .header__block {
+    width: 640.83px;
+    height: 475.88px;
   }
 
-  .header__banner {
-    order: 2;
-
-  }
-
-  .header__banner-buttons {
-    order: 1;
-
-  }
   
