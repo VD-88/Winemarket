@@ -73,16 +73,17 @@
 }
 
 .header__socials {
-    min-width: 100px;
+    min-width: 991px;
     display: flex;
+    justify-content: flex-end; /
     width: 32px;
-    gap: 15px;
+    gap: 10px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    justify-content: flex-end;
-    margin-right: 48px;
-    margin-left: 40 px;
+    margin-right: 400px; 
 }
+
 
 .header__banner {
     margin-top: 340;
@@ -134,5 +135,9 @@
 
 @media (min-width: 500px) {
     
+}
+
+.navbar-header {
+    width: 60%;
 }
 
