@@ -135,9 +135,13 @@
 }
 
 
-.navbar navbar-expand-lg fixed-top bg-body-tertiary {
-    width: 50%; /* встановлює ширину в 50% */
-    margin: 0 auto; /* вирівнює по центру */
-    float: right; /* зміщує меню праворуч */
+.navbar-nav {
+    width: 50%; 
+    margin: 0 auto; 
+    float: right; 
+  }
+
+  .header__blocks {
+    display: flex;
   }
   
