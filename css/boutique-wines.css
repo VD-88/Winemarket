@@ -35,7 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    gap: 2px;
+    gap: 10px;
   
 
 }
@@ -54,7 +54,6 @@
     font-size: 34px;
     margin-top: 20px;
     text-align: left;
-    width: 100%;
 
 }
 
@@ -82,8 +81,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-right: 360px; 
-    margin-top: 36px;
+    margin-right: 260px; 
+
 }
 
 
@@ -143,9 +142,5 @@
     float: right; 
   }
 
-  .header__block {
-    width: 640.83px;
-    height: 475.88px;
-  }
 
   
