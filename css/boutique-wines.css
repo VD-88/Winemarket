@@ -62,9 +62,10 @@
 }
 
 .header-decor {
-    display: flex;
-    justify-content: right;
-    margin-top: 25px;
+    height: 32px;
+    object-fit: contain;
+    object-position: 50% 50%;
+
 }
 
 .header__socials {
