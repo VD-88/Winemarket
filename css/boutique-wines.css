@@ -134,8 +134,7 @@
     box-sizing: border-box;
 }
 
-
-.navbar-toggler {
-    width: 480px
+.container-fluid{
+    width: 50%;
 }
 
