@@ -115,7 +115,6 @@
     width: 176px;
     height: auto;
     display: block;
-    max-width: 100%;
     margin-top: 40px;
     padding: 0;
     border: 0;
@@ -134,13 +133,6 @@
 }
 
 @media (min-width: 500px) {
-    .header__socials {
-        display: flex;
-    }
-    .header__logo-container {
-        display: flex;
-    }
-
     
 }
 
