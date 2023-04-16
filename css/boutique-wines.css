@@ -116,7 +116,8 @@
     width: 176px;
     height: auto;
     display: block;
-    margin-top: 40px;
+    margin-top: 36px;
+    margin-left: 400px;
     padding: 0;
     border: 0;
     object-fit: cover;
