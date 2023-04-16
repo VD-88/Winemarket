@@ -107,9 +107,8 @@
     opacity: 0, 5;
 }
 
-.navbar-nav {
-    margin-left: 480px;
-    margin-right: 40px;
+.header__nav {
+   
     --color-background-main: rgb(38, 30, 28);
     width: 1246px;
     height: 100px;
@@ -143,4 +142,9 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 
+}
+
+.navbar-nav {
+    margin-left: 480px;
+    margin-right: 40px;
 }
