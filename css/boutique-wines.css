@@ -80,7 +80,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-right: 400px; 
+    margin-right: 360px; 
     margin-top: 36px;
 }
 
@@ -134,7 +134,10 @@
     box-sizing: border-box;
 }
 
-.container-fluid{
-    width: 50%;
-}
 
+.navbar navbar-expand-lg fixed-top bg-body-tertiary {
+    width: 50%; /* встановлює ширину в 50% */
+    margin: 0 auto; /* вирівнює по центру */
+    float: right; /* зміщує меню праворуч */
+  }
+  
