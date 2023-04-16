@@ -36,7 +36,7 @@
     padding: 0;
     box-sizing: border-box;
     gap: 10px;
-  
+
 
 }
 
@@ -45,6 +45,32 @@
     display: block;
     font-size: 14px;
     text-align: left;
+    padding: 112, 5px 0px 50px 0px;
+    position: relative;
+}
+
+.header__banner {
+    padding: 0px 48px 0px 12px;
+}
+
+@media (min-width: 768px) {
+    .header__banner-text {
+        padding: 112, 5px 0px 50px 0px;
+    }
+
+    .header__banner {
+        padding: 0px 48px 0px 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header__banner-text {
+        padding: 112, 5px 0px 50px 0px;
+    }
+
+    .header__banner {
+        padding: 0px 48px 0px 12px;
+    }
 
 }
 
@@ -63,7 +89,7 @@
     font-size: 18px;
     margin-top: 20px;
     text-align: left;
-  
+
 }
 
 .header-decor {
@@ -75,13 +101,13 @@
 
 .header__socials {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     width: 32px;
     gap: 10px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-right: 260px; 
+    margin-right: 260px;
 
 }
 
@@ -111,7 +137,7 @@
     position: fixed;
     top: 0;
     background-color: var(--color-background-main);
-    }
+}
 
 .header__logo-container {
     width: 176px;
@@ -137,10 +163,7 @@
 
 
 .navbar-nav {
-    width: 50%; 
-    margin: 0 auto; 
-    float: right; 
-  }
-
-
-  
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}
