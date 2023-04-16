@@ -72,7 +72,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-right: 260px;
+    margin-right: 100px;
 
 }
 
@@ -134,3 +134,13 @@
     margin: 0 auto;
     float: right;
 }
+
+.header__banner-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header__banner-description {
+    margin-bottom: 10px;
+  }
+  
