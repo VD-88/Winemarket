@@ -88,7 +88,8 @@
 
 .background {
     background-image: url("img/header-wine.jpg");
-    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     background-position: center center;
     min-height: 500px;
