@@ -68,13 +68,15 @@
 }
 
 .header__socials {
-    min-width: 991px;
+    min-width: 150px;
     display: flex;
     width: 32px;
-    gap: 10px;
+    gap: 15px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    justify-content: flex-end;
+    margin-right: 419px;
 }
 
 .header__banner {
