@@ -35,7 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    gap: 15px;
+    gap: 2px;
   
 
 }
@@ -44,7 +44,7 @@
 .header__banner-text {
     display: block;
     font-size: 14px;
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -53,7 +53,8 @@
     font-family: var(--font-for-subtitle);
     font-size: 34px;
     margin-top: 20px;
-    text-align: right;
+    text-align: left;
+    width: 100%;
 
 }
 
@@ -62,7 +63,7 @@
     font-family: var(--font-main);
     font-size: 18px;
     margin-top: 20px;
-    text-align: right;
+    text-align: left;
   
 }
 
