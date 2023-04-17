@@ -141,10 +141,15 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 60px;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
     scroll-behavior: auto;
-}
+    }
+    
+    body {
+    margin-top: 60px;
+    }
 
 .header__logo-container {
     padding: 10px 0;
