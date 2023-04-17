@@ -140,12 +140,13 @@
   }
   
 
-.header__block {
+  .header__block {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 80px;
+    right: 150px;
   }
+  
   
   .header__banner-description {
     margin-bottom: 10px;
