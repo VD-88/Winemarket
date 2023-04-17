@@ -139,13 +139,13 @@
     max-width: 30%;
   }
   
-
   .header__block {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 150px;
+    left: -200px;
   }
+  
   
   
   .header__banner-description {
