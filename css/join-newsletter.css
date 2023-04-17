@@ -1,5 +1,5 @@
 .join-newsletter {
-    padding: 90px 0px 15px 0px;
+    padding: 90px 0 15px 0;
     position: relative;
     background-color: var(--color-background-join-newsletter);
     font-family: var(--font-main);
@@ -7,15 +7,13 @@
 }
 
 .join-newsletter__container {
-    padding: 0px 24px 0px 24px;
+    padding: 0 24px;
 }
 
 .container__jn-header {
     display: block;
-    padding: 0px 15px 0px 15px;
-    margin: 0px -15px 0px -15px;
-    /*wtf*/
-    ;
+    padding: 0 15px;
+    margin: 0 -15px;
 }
 
 .header__jn-title {
@@ -42,10 +40,8 @@
 
 .container__jn-content {
     display: block;
-    padding: 0px 15px 0px 15px;
-    margin: 50px -15px 0px -15px;
-    /*wtf*/
-    ;
+    padding: 0 15px;
+    margin: 50px -15px 0 -15px;
 }
 
 .content__jn-form {
@@ -56,7 +52,7 @@
 
 .contact-form__input-email {
     margin-top: 12px;
-    padding: 16px 25px 16px 25px;
+    padding: 16px 25px;
     background-color: var(--color-background-email);
     border-radius: 2px;
     text-align: start;
@@ -72,14 +68,14 @@
 }
 
 .contact-form__input-email:focus {
-    padding: 14px 23px 14px 23px;
+    padding: 14px 23px;
     outline: 1.5px solid var(--color-main);
     border: 2px solid rgb(59, 153, 252);
 }
 
 .contact-form__submit {
     margin-top: 24px;
-    padding: 16px 25px 16px 25px;
+    padding: 16px 25px;
     background-color: var(--color-special);
     border: 3px;
     border-radius: 2px;
@@ -91,13 +87,12 @@
 }
 
 .contact-form__submit:hover {
-    content: "\01F60A";
-    opacity: 0.9;
+    background-color: var(--color-background-button-hover);
 }
 
 .join-newsletter__footer {
-    margin: 45px -15px 0px -15px;
-    padding: 15px 15px 15px 15px;
+    margin: 45px -15px 0 -15px;
+    padding: 15px;
 }
 
 .jn-footer__divider {
@@ -105,10 +100,10 @@
 }
 @media (min-width: 768px) {
     .join-newsletter {
-        padding: 100px 0px 15px 0px;
+        padding: 100px 0 15px 0;
     }
     .join-newsletter__container {
-        padding: 0px 32px 0px 32px;
+        padding: 0 32px;
     }
     .header__jn-title {
         font-size: 21px;
@@ -122,14 +117,14 @@
         justify-content: space-between;
     }
     .container__jn-header {
-        margin: 0px;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex-basis: 66.67%;
     }
     .container__jn-content {
-        margin: 0px;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -139,10 +134,10 @@
 
 @media (min-width: 992px) {
     .join-newsletter {
-        padding: 110px 0px 15px 0px;
+        padding: 110px 0 15px 0;
     }
     .join-newsletter__container {
-        padding: 0px 40px 0px 40px;
+        padding: 0 40px;
     }
     .header__jn-title {
         font-size: 28px;

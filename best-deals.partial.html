@@ -10,7 +10,85 @@
             <p class="header__bd-adv-message">Shop our best-selling wines. Click on the product images to see the details.
             </p>
         </div>
-        <div class="container__carousel carousel">
+        <div id="best-deals-carousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#best-deals-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#best-deals-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#best-deals-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#best-deals-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <li class="wine-list__card card">
+                    <figure class="card__cabernet item" id="cabernet">
+                        <a href="product-page.html" class="item-link">
+                            <img class="item__picture" src="img/carousel-item-cabernet.jpg"
+                                alt="Cabernet" width="160">
+                            <figcaption class="item__name">Cabernet</figcaption>
+                        </a>
+                        <p class="item__price">17,00USD</p>
+                        <button class="item__button add-to-cart-button" type="submit">
+                            Add to cart
+                        </button>
+                    </figure>
+                </li>
+              </div>
+              <div class="carousel-item">
+                <li class="wine-list__card card">
+                    <figure class="card__sauvignon-blanc item" id="sauvignon-blanc">
+                        <a href="product-page.html" class="shop-link">
+                            <img class="item__picture"
+                                src="img/carousel-item-sauvignon-blanc.jpg" alt="Sauvignon Blanc" width="160">
+                            <figcaption class="item__name">Sauvignon Blanc</figcaption>
+                        </a>
+                        <p class="item__price">12,00USD</p>
+                        <button class="item__button add-to-cart-button" type="submit">
+                            Add to cart
+                        </button>
+                    </figure>
+                </li>
+              </div>
+              <div class="carousel-item">
+                <li class="wine-list__card card">
+                    <figure class="wine-item__syrah" id="syrah">
+                        <a href="product-page.html" class="shop-link">
+                            <img class="item__picture" src="img/carousel-item-syrah.jpg" alt="Syrah"
+                                width="160">
+                            <figcaption class="item__name">Syrah</figcaption>
+                        </a>
+                        <p class="item__price">13,00USD</p>
+                        <button class="item__button add-to-cart-button" type="submit">
+                            Add to cart
+                        </button>
+                    </figure>
+                </li>
+              </div>
+              <div class="carousel-item">
+                <li class="wine-list__card card">
+                    <figure class="wine-item__pinot-grigio" id="pinot-grigio">
+                        <a href="product-page.html" class="shop-link">
+                            <img class="item__picture" src="img/carousel-item-pinot-grigio.jpg"
+                                alt="Pinot Grigio" width="160">
+                            <figcaption class="item__name">Pinot Grigio</figcaption>
+                        </a>
+                        <p class="item__price">10,00USD</p>
+                        <button class="item__button add-to-cart-button" type="submit">
+                            Add to cart
+                        </button>
+                    </figure>
+                </li>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#best-deals-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#best-deals-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!--<div class="container__carousel carousel">
             <nav class="carousel__wine-navigation wine-navigation">
                 <ul class="wine-navigation__wine-list wine-list">
                     <li class="wine-list__card card">
@@ -89,6 +167,6 @@
                     </ul>
                 </ul>
             </nav>
-        </div>
+        </div>-->
     </div>
 </section>
