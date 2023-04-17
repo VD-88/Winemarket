@@ -62,7 +62,7 @@
     border: none;
 }
 .item__picture {
-    width: 100%;
+    width: 100px;
     border-radius: 15%;
 }
 .item__picture:hover {
