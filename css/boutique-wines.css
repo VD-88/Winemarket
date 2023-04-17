@@ -146,6 +146,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     scroll-behavior: auto;
     display: flex;
+    margin: 0;
 }
     
 
