@@ -27,16 +27,12 @@
 }
 
 .header__banner-buttons {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    gap: 5px;
-    right: 80px;
-    object-position: 0% 50%;
+    gap: 10px; 
 }
 
 .header__banner-title {
@@ -45,7 +41,6 @@
     font-size: 72px;
     margin-top: 20px;
     text-align: left;
-
 }
 
 .header__banner-description {
@@ -54,7 +49,6 @@
     font-size: 18px;
     margin-top: 20px;
     text-align: left;
-
 }
 
 .header__container {
