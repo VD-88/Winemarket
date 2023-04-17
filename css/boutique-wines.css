@@ -30,11 +30,12 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 100px;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     gap: 15px;
-    right: 220px;
+    right: 80px;
+    position: relative;
+    display: flex;
 
 
 }
@@ -85,7 +86,8 @@
 .header__banner {
     display: box;
     margin-top: 340;
-    right: 220px;
+    right: 80px;
+    position: relative;
 
 }
 
