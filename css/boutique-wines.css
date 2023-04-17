@@ -27,7 +27,6 @@
 }
 
 .header__banner-buttons {
-    order: 1;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -43,7 +42,7 @@
 .header__banner-title {
     display: block;
     font-family: var(--font-for-subtitle);
-    font-size: 34px;
+    font-size: 62px;
     margin-top: 20px;
     text-align: left;
 
@@ -61,7 +60,7 @@
 .header-decor {
     height: 32px;
     object-fit: contain;
-    object-position: 50% 50%;
+    width: 640.83px;
 
 }
 
@@ -81,9 +80,7 @@
 
 .header__banner {
     display: box;
-    order: 2;
     margin-top: 340;
-    margin-right: 480px;
     right: 80px;
 
 }
