@@ -34,10 +34,9 @@
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    gap: 15px;
+    gap: 5px;
     right: 80px;
-
-
+    object-position: 0% 50%;
 }
 
 .header__banner-title {
