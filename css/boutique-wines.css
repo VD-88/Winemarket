@@ -97,12 +97,6 @@
     height: 100vh;
 }
 
-.header__nav {
-    --color-background-main: rgb(38, 30, 28);
-    position: fixed;
-    top: 0;
-    background-color: var(--color-background-main);
-}
 
 .header__logo-container {
     display: flex;
@@ -128,25 +122,12 @@
     box-sizing: border-box;
 }
 
-
-.navbar-nav {
-    width: 50%;
-    margin: 0 auto;
-    float: right;
-
-}
-.navbar {
-    max-width: 30%;
-  }
-  
   .header__block {
     display: flex;
     flex-direction: column;
     position: relative;
     right: -220px;
   }
-  
-  
   
   .header__banner-description {
     margin-bottom: 10px;
