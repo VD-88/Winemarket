@@ -136,18 +136,15 @@
 
 }
 
-
-
 .navbar {
-    background-attachment: fixed;
+    position: relative;
     top: 0;
     width: 100%;
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
-    scroll-behavior: auto;
     display: flex;
-    margin: 0;
-}
+    z-index: 999; 
+    overflow-x: auto; 
+  }
     
 
 .header__logo-container {

@@ -46,7 +46,12 @@
     font-family: var(--font-for-subtitle);
     font-size: 22px;
     font-weight: normal;
-    margin: 0px 20px 10px 20px;
+    margin: 0px 20px -18px 20px;
+    color: var(--color-main);
+}
+
+.craft-wines__type_name:hover {
+    color: var(--color-main);
 }
 
 .store__main {
