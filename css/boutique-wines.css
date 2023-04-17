@@ -29,14 +29,12 @@
 .header__banner-buttons {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     gap: 15px;
     right: 80px;
-    position: relative;
-    display: flex;
 
 
 }
@@ -67,7 +65,7 @@
 .header__decor {
     height: 32px;
     object-fit: contain;
-    object-position: 0% 50%;
+    object-position: 50% 50%;
 }
 
 .header__socials {
@@ -87,8 +85,7 @@
 .header__banner {
     display: box;
     margin-top: 340;
-    right: 80px;
-    position: relative;
+    right: 140px;
 
 }
 
@@ -152,8 +149,6 @@
 .header__block {
     display: flex;
     flex-direction: column;
-    position: relative;
-    right: 100px;
   }
   
   .header__banner-description {
