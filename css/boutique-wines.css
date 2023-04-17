@@ -29,12 +29,12 @@
 .header__banner-buttons {
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 100px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     gap: 15px;
-    right: 140px;
+    right: 220px;
 
 
 }
@@ -42,7 +42,7 @@
 .header__banner-title {
     display: block;
     font-family: var(--font-for-subtitle);
-    font-size: 62px;
+    font-size: 72px;
     margin-top: 20px;
     text-align: left;
 
@@ -65,7 +65,7 @@
 .header__decor {
     height: 32px;
     object-fit: contain;
-    object-position: 50% 50%;
+    object-position: 0% 50%;
 }
 
 .header__socials {
@@ -85,7 +85,7 @@
 .header__banner {
     display: box;
     margin-top: 340;
-    right: 140px;
+    right: 220px;
 
 }
 
