@@ -47,7 +47,7 @@
     font-size: 22px;
     font-weight: normal;
     margin: 0px 20px -18px 20px;
-    color: var(--color-main);
+    color: var(--color-support);
 }
 
 .craft-wines__type_name:hover {
@@ -74,6 +74,10 @@
 .craft-wines__white {
     display: grid;
     justify-items: center;
+}
+
+.wine-item {
+    min-width: 150px;
 }
 
 .wine-item__link {
@@ -119,7 +123,11 @@
 }
 
 .add-to-cart:hover {
-    filter: brightness(80%)
+    filter: brightness(80%);
+}
+
+.nav-underline .nav-link.active {
+    color: var(--color-main);
 }
 
 @media (min-width: 992px) {
