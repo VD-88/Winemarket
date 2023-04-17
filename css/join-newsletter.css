@@ -87,8 +87,7 @@
 }
 
 .contact-form__submit:hover {
-    content: "\01F60A";
-    opacity: 0.9;
+    background-color: var(--color-background-button-hover);
 }
 
 .join-newsletter__footer {
