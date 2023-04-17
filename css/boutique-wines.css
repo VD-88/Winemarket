@@ -44,7 +44,7 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    right: -440px;
+    right: -490px;
 }
 
 .header__banner {
@@ -59,7 +59,6 @@
     width: 176px;
     height: auto;
     display: block;
-    margin-top: 36px;
     margin-left: 400px;
     padding: 0;
     border: 0;
@@ -127,4 +126,8 @@
     height: 40px;
     border: 0px;
     border-radius: 3px;
+}
+
+.navbar-nav {
+    color: aliceblue;
 }
