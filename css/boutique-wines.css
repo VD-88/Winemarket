@@ -138,13 +138,13 @@
 
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
-    overflow: scroll;
 }
+
 .header__logo-container {
     padding: 10px 0;
 }
