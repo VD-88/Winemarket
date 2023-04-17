@@ -95,7 +95,7 @@
     opacity: 0.9;
 }
 
-.container__jn-footer {
+.join-newsletter__footer {
     margin: 45px -15px 0px -15px;
     padding: 15px 15px 15px 15px;
 }
@@ -150,4 +150,7 @@
     .header__jn-subtitle {
         font-size: 32px;
     } 
+    .join-newsletter__footer {
+        margin-top: 50px;
+    }
 }
