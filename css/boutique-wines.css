@@ -137,15 +137,18 @@
 }
 
 
+
 .navbar {
-    position: fixed;
+    background-attachment: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
     scroll-behavior: auto;
+    display: flex;
+    margin: 0;
 }
+    
 
 .header__logo-container {
     padding: 10px 0;
