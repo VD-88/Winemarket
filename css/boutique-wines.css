@@ -39,14 +39,13 @@
 
 .header__socials {
     display: flex;
-    justify-content: flex-end;
-    width: 32px;
-    gap: 10px;
+    width: 28px;
+    gap: 13px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    right: -490px;
+    right: -432px;
 
 }
 
@@ -79,7 +78,7 @@
     align-items: right;
     position: relative;
     right: -220px;
-    top: -60px
+    top: -42px
 }
 
 .header__banner-description {
@@ -114,8 +113,13 @@
     border: 0px;
     border-radius: 3px;
     margin-right: 5 px;
-
 }
+
+
+.shop-now:hover {
+    background-color: rgb(175, 87, 43);
+}
+
 
 .learn-more {
     text-align: center;
@@ -129,15 +133,24 @@
     border-radius: 3px;
 }
 
+.learn-more {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.learn-more:hover {
+    background-color: #fff;
+    color: rgb(38, 30, 28);
+}
+
 .navbar-nav .nav-link {
     color: white;
     position: relative;
     right: -400px;
-
 }
 
 .navbar {
-
     width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
@@ -156,43 +169,3 @@
     right: 0;
     left: 0;
 }
-
-@media (min-width: 768px) {
-    .header__main {
-        padding: 100px 0 50px 0;
-    }
-}
-
-.header__navbar-container {
-    padding: 0;
-    
-}
-
-.header__banner-text {
-    font-size: 32px;
-}
-
-.header__banner-title {
-    font-size: 72x;
-}
-
-@media (min-width: 992px) {
-    .header__main {
-        padding: 110px 0 50px 0;
-    }
-
-    .header__navbar-container {
-        padding: 0;
-    }
-
-    .header__banner-text {
-        font-size: 32px;
-    }
-
-    .header__banner-title {
-        font-size: 72px;
-    }
-}
-
-
-
