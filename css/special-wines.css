@@ -1,4 +1,58 @@
 .description-wines {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    padding: 105px 0 0 60px;
+    
 }
+
+.description-wines__one-picture-container {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.corkscrew-cheese img {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+}
+
+.description-wines__title {
+    position: absolute;
+    bottom: 40%;
+    padding-left: 32px;
+
+}
+
+.description-wines__line {
+    position: absolute;
+    bottom: 30%;
+    ppadding-left: 32px;
+}
+
+.description-wines__text {
+    position: absolute;
+    bottom: 20%;
+    color: rgb(137,128,130);
+    padding-left: 32px;
+}
+
+.description-wines__nav {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    padding-left: 32px;
+}
+
+
+
+
+@media (min-width: 600px) {
+    .description-wines__one-picture-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    
+}
+
+
