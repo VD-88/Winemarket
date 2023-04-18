@@ -1,58 +1,70 @@
 .description-wines {
-    display: grid;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
     padding: 105px 0 0 60px;
+
     
 }
 
-.description-wines__one-picture-container {
-    display: inline-block;
-    position: relative;
-    box-sizing: border-box;
+.description-wines__container-corkscrew-cheese{
+    background-image: url(../img/corkscrew-cheese.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
 }
 
-.corkscrew-cheese img {
-    width: 70%;
+.description-wines__container-glass-two{
+    background-image: url(../img/glass-two.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.description-wines__container-wine-grape{
+    background-image: url(../img/wine-grape.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+}
+
+.description-wines__container img {
+    display: block;
+    width: 100%;
     margin: auto;
-    position: absolute;
-}
-
-.description-wines__title {
-    position: absolute;
-    bottom: 40%;
-    padding-left: 32px;
+    padding: auto;
 
 }
 
-.description-wines__line {
-    position: absolute;
-    bottom: 30%;
-    ppadding-left: 32px;
-}
-
-.description-wines__text {
-    position: absolute;
-    bottom: 20%;
-    color: rgb(137,128,130);
-    padding-left: 32px;
-}
-
-.description-wines__nav {
-    position: absolute;
-    bottom: 10%;
-    color: white;
-    padding-left: 32px;
-}
-
-
-
-
-@media (min-width: 600px) {
-    .description-wines__one-picture-container {
+@media (min-width: 500px) {
+    .description-wines__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
     }
-    
+} 
+
+@media (min-width: 900px) {
+    .description-wines__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+} 
+
+.about-wine__container-natural {
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
 }
 
-
+.about-wine__svg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+}
