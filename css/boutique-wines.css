@@ -1,11 +1,12 @@
-
-    .header__banner-buttons {
+.header__banner-buttons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 18px;
+    position: relative;
+    top: 20px;
 }
 
 .header__banner-title {
@@ -49,12 +50,6 @@
 
 }
 
-.header__banner {
-    display: box;
-    margin-top: 340;
-    right: 140px;
-}
-
 .header__logo-container {
     display: flex;
     justify-content: right;
@@ -84,7 +79,7 @@
     align-items: right;
     position: relative;
     right: -220px;
-    top: -20px
+    top: -60px
 }
 
 .header__banner-description {
@@ -162,4 +157,42 @@
     left: 0;
 }
 
- 
+@media (min-width: 768px) {
+    .header__main {
+        padding: 100px 0 50px 0;
+    }
+}
+
+.header__navbar-container {
+    padding: 0;
+    
+}
+
+.header__banner-text {
+    font-size: 32px;
+}
+
+.header__banner-title {
+    font-size: 72x;
+}
+
+@media (min-width: 992px) {
+    .header__main {
+        padding: 110px 0 50px 0;
+    }
+
+    .header__navbar-container {
+        padding: 0;
+    }
+
+    .header__banner-text {
+        font-size: 32px;
+    }
+
+    .header__banner-title {
+        font-size: 72px;
+    }
+}
+
+
+
