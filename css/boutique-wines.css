@@ -67,9 +67,7 @@
 .header__block {
     justify-content: center;
     align-items: right;
-    position: relative;
-    right: -220px;
-    top: -42px
+    margin-top: 200px;
 }
 
 .header__banner-description {
@@ -77,12 +75,11 @@
 }
 
 .header {
-    background-image: url("img/header-wine.jpg");
+    background-image: url("../img/header-wine.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     background-attachment: fixed;
     background-clip: border-box;
     margin: 0 auto;
@@ -147,7 +144,6 @@
     scroll-behavior: auto;
     display: flex;
 }
-
 
 .header__logo-container {
     padding: 10px 0;
