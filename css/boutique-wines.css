@@ -155,5 +155,8 @@
     margin-right: 38px;
 }
 
-
-    
+@media (min-width: 768px) {
+    .header__block {
+        margin-left: 400px;
+    }
+}    
