@@ -10,6 +10,7 @@
 }
 
 .header__banner-title {
+    flex-wrap: wrap;
     display: block;
     font-family: var(--font-for-subtitle);
     font-size: 58px;
@@ -70,7 +71,7 @@
     margin-bottom: 10px;
 }
 
-.header {
+.header-main {
     background-image: url("../img/header-wine.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,3 +152,10 @@
     right: 0;
     left: 0;
 }
+
+.navbar-toggler {
+    margin-right: 38px;
+}
+
+
+    
