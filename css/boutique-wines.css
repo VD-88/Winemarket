@@ -12,7 +12,7 @@
 .header__banner-title {
     display: block;
     font-family: var(--font-for-subtitle);
-    font-size: 72px;
+    font-size: 58px;
     margin-top: 20px;
     text-align: left;
 }
@@ -39,14 +39,10 @@
 
 .header__socials {
     display: flex;
-    width: 28px;
     gap: 13px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
-    right: -432px;
-
 }
 
 .header__logo-container {
@@ -102,11 +98,9 @@
     margin-right: 5 px;
 }
 
-
 .shop-now:hover {
     background-color: rgb(175, 87, 43);
 }
-
 
 .learn-more {
     text-align: center;
@@ -133,8 +127,10 @@
 
 .navbar-nav .nav-link {
     color: white;
-    position: relative;
-    right: -400px;
+}
+
+.navbar-nav {
+    align-items: center;
 }
 
 .navbar {
