@@ -75,8 +75,6 @@
     background-image: url("../img/header-wine.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     background-attachment: fixed;
     background-clip: border-box;
     margin: 0 auto;
