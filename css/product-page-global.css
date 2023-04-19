@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 @import "global.css";
 
 :root {
     --color-stock: rgb(97, 168, 84);
+    --rubik-600: 'Rubik', sans-serif;
 }
 
 body {
