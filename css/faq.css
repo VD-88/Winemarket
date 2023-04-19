@@ -1,0 +1,46 @@
+.accordion-button:not(.collapsed) {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    background-color: var(--color-background-main);
+    border: 1px rgb(137, 128, 130);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    background-color: var(--color-background-main);
+    margin: 0px;
+    
+}
+
+.accordion-body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(137,128,130);
+    background-color: var(--color-background-main);
+}
+
+.accordion-item {
+    border-color: rgb(137, 128, 130);
+}
+
+.accordion-button button i {
+    color: rgb(137, 128, 130);
+}
+
+.faq__have-a-question {
+    font-size: 34px;
+}
+
+.accordion {
+    margin: 20px;
+}
