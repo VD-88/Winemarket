@@ -44,3 +44,11 @@
 .accordion {
     margin: 20px;
 }
+
+.faq__separator {
+    width: 166px;
+}
+
+.wine-picture {
+    max-width: 272px;
+}
