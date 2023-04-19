@@ -17,7 +17,7 @@
     font-weight: 400;
     color: rgb(255,255,255);
     background-color: var(--color-background-main);
-    margin: 0px;
+    padding-left: 0px;
     
 }
 
@@ -27,6 +27,7 @@
     font-weight: 400;
     color: rgb(137,128,130);
     background-color: var(--color-background-main);
+    padding-left: 0px;
 }
 
 .accordion-item {
@@ -42,7 +43,7 @@
 }
 
 .accordion {
-    margin: 20px;
+    margin: 0px;
 }
 
 .faq__separator {
@@ -50,5 +51,27 @@
 }
 
 .wine-picture {
-    max-width: 272px;
+    max-width: 700px;
+}
+
+.faq__title {
+    font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+    .faq__accordion {
+        display: flex;}
+    
+    .wine-picture {
+        max-width: 450px;
+    }
+
+    .container {
+        min-width: 490px;
+    }
+
+    .faq__title {
+        font-size: 29.4px;
+    }
 }
