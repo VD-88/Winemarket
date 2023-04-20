@@ -128,10 +128,8 @@
 
     width: 100%;
     padding: 0;
-    margin: 0;
-
+    margin-left: -24px;
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li
@@ -142,7 +140,7 @@
 
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0 7px;
     padding: 0;
 
     cursor: pointer;
@@ -189,10 +187,11 @@
     height: 20px;
 
     content: '•';
+    font-size: 40px;
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +199,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: white;
+    transform: scale(1.2);
 }

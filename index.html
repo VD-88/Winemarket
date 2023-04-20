@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    
 </head>
 
 <body>
 
     <!--Pop-up section -->
     <section data-include="pop-up.partial.html"></section>
-    
+
 
     <!--Viktoriia Tymoshchenko-->
     <header data-include="boutique-wines.partial.html"></header>
@@ -35,17 +36,82 @@
         <!-- Shymanskyi Pavlo -->
 
         <!-- Yaroslav Tkachyk Start block "Best deals" -->
-        <section data-include="best-deals.partial.html"></section> 
-        <!--
-        <div class="wrap">
-            <div class="your-class multiple-items">
-                <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
-                <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
-                <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
-                <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
+        <!--<section data-include="best-deals.partial.html"></section> -->
+
+        <section class="best-deals" id="best-deals">
+            <div class="best-deals__container container">
+                <div class="container__bd-header header">
+                    <h2 class="header__bd-title">Best deals</h2>
+                    <p class="header__bd-subtitle">Wines to Every Table</p>
+                    <figure class="header__bd-decor-container">
+                        <img src="img/grape-decor.svg" alt="grape decor" class="header__grape-decor">
+                    </figure>
+                    <p class="header__bd-adv-message">Shop our best-selling wines. Click on the product images to see
+                        the
+                        details.
+                    </p>
+                </div>
+                <div class="best-deals__carousel carousel">
+                    <nav class="carousel__wine-navigation wine-navigation">
+                        <ul class="wine-navigation__wine-list wine-list responsive">
+                            <li class="wine-list__card card">
+                                <figure class="card__cabernet item" id="cabernet">
+                                    <a href="product-page.html" class="item-link">
+                                        <img class="item__picture" src="img/carousel-item-cabernet.jpg" alt="Cabernet"
+                                            width="160">
+                                        <figcaption class="item__name">Cabernet</figcaption>
+                                    </a>
+                                    <p class="item__price">17,00USD</p>
+                                    <button class="item__button add-to-cart-button" type="submit">
+                                        Add to cart
+                                    </button>
+                                </figure>
+                            </li>
+                            <li class="wine-list__card card">
+                                <figure class="card__sauvignon-blanc item" id="sauvignon-blanc">
+                                    <a href="product-page.html" class="shop-link">
+                                        <img class="item__picture" src="img/carousel-item-sauvignon-blanc.jpg"
+                                            alt="Sauvignon Blanc" width="160">
+                                        <figcaption class="item__name">Sauvignon Blanc</figcaption>
+                                    </a>
+                                    <p class="item__price">12,00USD</p>
+                                    <button class="item__button add-to-cart-button" type="submit">
+                                        Add to cart
+                                    </button>
+                                </figure>
+                            </li>
+                            <li class="wine-list__card card">
+                                <figure class="wine-item__syrah" id="syrah">
+                                    <a href="product-page.html" class="shop-link">
+                                        <img class="item__picture" src="img/carousel-item-syrah.jpg" alt="Syrah"
+                                            width="160">
+                                        <figcaption class="item__name">Syrah</figcaption>
+                                    </a>
+                                    <p class="item__price">13,00USD</p>
+                                    <button class="item__button add-to-cart-button" type="submit">
+                                        Add to cart
+                                    </button>
+                                </figure>
+                            </li>
+                            <li class="wine-list__card card">
+                                <figure class="wine-item__pinot-grigio" id="pinot-grigio">
+                                    <a href="product-page.html" class="shop-link">
+                                        <img class="item__picture" src="img/carousel-item-pinot-grigio.jpg"
+                                            alt="Pinot Grigio" width="160">
+                                        <figcaption class="item__name">Pinot Grigio</figcaption>
+                                    </a>
+                                    <p class="item__price">10,00USD</p>
+                                    <button class="item__button add-to-cart-button" type="submit">
+                                        Add to cart
+                                    </button>
+                                </figure>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        -->
+        </section>
+
         <!-- Yaroslav Tkachyk End block "Best deals" -->
 
         <!-- Block 8 "Craft wines" Maksym Shulha -->
@@ -71,6 +137,14 @@
         <!-- Yaroslav Tkachyk Start block "Join newsletter" -->
         <section data-include="join-newsletter.partial.html"></section>
         <!-- Yaroslav Tkachyk End block "Join newsletter" -->
+        <div class="multiple-items">
+            <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
+            <div><img src="img/carousel-item-sauvignon-blanc.jpg" alt=""></div>
+            <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
+            <div><img src="img/carousel-item-sauvignon-blanc.jpg" alt=""></div>
+            <div><img src="img/carousel-item-cabernet.jpg" alt=""></div>
+            <div><img src="img/carousel-item-sauvignon-blanc.jpg" alt=""></div>
+        </div>
     </main>
     <footer>
 
@@ -88,6 +162,6 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-</body> 
+</body>
 
 </html>
