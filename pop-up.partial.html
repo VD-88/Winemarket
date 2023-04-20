@@ -1,4 +1,24 @@
 <!--Volodymyr Dukhanin-->
+<button type="button" data-bs-toggle="modal" data-bs-target="#popup">Launch modal</button>
+<!-- Modal -->
+<div class="modal fade" id="popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 <section class="pop-up container">
     <h3 class="pop-up__title">Confirm Your Age</h3>
     <img src="img/header-decor.svg" alt="" class="pop-up__separator">
@@ -6,3 +26,8 @@
     <button class="pop-up__yes">Yes, I'm 21+</button>
     <button class="pop-up__no">No, I'm under 21</button>
 </section>
+
+<script>
+    const modalToggle = document.getElementById('#popup'); 
+    myModal.show(modalToggle)
+</script>
