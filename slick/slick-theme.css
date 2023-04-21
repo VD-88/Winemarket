@@ -38,6 +38,7 @@
 
     color: transparent;
     border: none;
+    border-radius: 50%;
     outline: none;
     background: transparent;
 }
@@ -55,6 +56,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
+    content: '🥴';
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
@@ -88,11 +90,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '>';
 }
 
 .slick-next
@@ -106,11 +108,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '<';
 }
 
 /* Dots */
