@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         id: "1",
         title: "Cabernet",
@@ -18,6 +18,16 @@ const products = [
         smallImage: 'img/pinot-noir.png',
         bigImage: 'img/carousel-item-syrah.jpg',
         description: `This intense wine has aromas of violets, red fruit, cherry, blackberry, and vanilla. It also features rich flavors of blackberry, black cherry, plum, and vanilla with silky tannins and a rich finish.`
+    },
+    {
+        id: "3",
+        title: "Pinot Noir",
+        price: 12.00,
+        type: "red",
+        quantity: 40,
+        smallImage: 'img/pinot-noir.png',
+        bigImage: 'img/big-pinot-noir.jpeg',
+        description: `It is one of the lightest red wines. Pinot Noir is easy to drink, it won't punch you in the face like some reds can and is perfect for romantic evenings and meetings with friends. Our Pinot Noir has a "light body" and feels silky to the tongue. You might taste bright berries like raspberry and cranberry.`
     },
     {
         id: "4",
