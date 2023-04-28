@@ -2,7 +2,8 @@
 @import "global.css";
 
 :root {
-    --color-stock: rgb(97, 168, 84);
+    --color-in-stock: rgb(97, 168, 84);
+    --color-out-of-stock: rgb(219, 50, 47);
     --rubik-600: 'Rubik', sans-serif;
 }
 

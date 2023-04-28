@@ -7,7 +7,7 @@ export const products = [
         quantity: 100,
         smallImage: 'img/pinot-noir.png',
         bigImage: 'img/carousel-item-cabernet.jpg',
-        description: `If you don't want which red wine to buy, think of this Cabernet. It has a very deep dark purple color and opens with boysenberry, bourbon, and vanilla aromas. Then you'll feel brown sugar, cocoa, spices, and currants. It's a wine with a really rich taste.`
+        description: `If you don't know which red wine to buy, think of this Cabernet. It has a very deep dark purple color and opens with boysenberry, bourbon, and vanilla aromas. Then you'll feel brown sugar, cocoa, spices, and currants. It's a wine with a really rich taste.`
     },
     {
         id: "2",
@@ -84,7 +84,7 @@ export const products = [
         title: "Riesling",
         price: 16.00,
         type: "white",
-        quantity: 60,
+        quantity: 0,
         smallImage: 'img/soave.png',
         bigImage: 'img/big-riesling.jpg',
         description: `Dazzling silver-gold in color, with intense mineral aromas of shale, gravel, and limestone, combined with notes of white flower, green apple, peach, and lemon oil. You can smell the flavors of fresh apricot, lime, and grapefruit pith.`
