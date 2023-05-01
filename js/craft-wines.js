@@ -1,4 +1,13 @@
-import { products } from "./product-list.js";
+let products;
+
+async function loadData() {
+  const response = await fetch('api/products.json');
+  products = await response.json();
+  renderRedWines(products);
+  renderWhiteWines(products);
+  waitForClick();
+}
+loadData();
 
 function renderRedWines(products) {
   const winesRed = document.querySelector('.craft-wines__red');
@@ -29,19 +38,17 @@ function createProductHtml(product) {
             </article>`;
 }
 
-renderRedWines(products)
-renderWhiteWines(products)
-
-const productCards = document.querySelectorAll('.craft-wines__item');
-
-productCards.forEach(card => {
-  const smallImage = card.querySelector('.wine-item__picture');
-  smallImage.addEventListener('click', () => {
-    const productId = card.dataset.id;
-    const product = products.find(p => p.id == productId);
-    populateProductPage(product);
+function waitForClick() {
+  const productCards = document.querySelectorAll('.craft-wines__item');
+  productCards.forEach(card => {
+    const smallImage = card.querySelector('.wine-item__picture');
+    smallImage.addEventListener('click', () => {
+      const productId = card.dataset.id;
+      const product = products.find(p => p.id == productId);
+      populateProductPage(product);
+    });
   });
-});
+};
 
 function populateProductPage(product) {
   const newWindow = window.open('product-page.html');
