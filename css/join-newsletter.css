@@ -6,24 +6,22 @@
     color: var(--color-main);
 }
 
-.join-newsletter__container {
+.join-newsletter__wrapper {
     padding: 0 24px;
+    margin-bottom: 15px;
 }
 
 .container__jn-header {
-    display: block;
     padding: 0 15px;
     margin: 0 -15px;
 }
 
 .header__jn-title {
-    display: block;
     font-size: 14px;
     text-align: left;
 }
 
 .header__jn-subtitle {
-    display: block;
     font-family: var(--font-for-subtitle);
     font-size: 28px;
     margin-top: 20px;
@@ -31,7 +29,6 @@
 }
 
 .header__jn-adv-message {
-    display: block;
     font-family: var(--font-main);
     font-size: 16px;
     margin-top: 25px;
@@ -39,7 +36,6 @@
 }
 
 .container__jn-content {
-    display: block;
     padding: 0 15px;
     margin: 50px -15px 0 -15px;
 }
@@ -92,30 +88,37 @@
 
 .join-newsletter__footer {
     margin: 45px -15px 0 -15px;
-    padding: 15px;
+    padding: 0 24px;
 }
 
 .jn-footer__divider {
     border-top: 1px solid white;
+    padding: 0 15px;
 }
+
 @media (min-width: 768px) {
     .join-newsletter {
         padding: 100px 0 15px 0;
     }
-    .join-newsletter__container {
+
+    .join-newsletter__wrapper {
         padding: 0 32px;
     }
+
     .header__jn-title {
         font-size: 21px;
     }
+
     .header__jn-subtitle {
         font-size: 30px;
-    } 
+    }
+
     .join-newsletter__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .container__jn-header {
         margin: 0;
         display: flex;
@@ -123,6 +126,7 @@
         justify-content: flex-start;
         flex-basis: 66.67%;
     }
+
     .container__jn-content {
         margin: 0;
         display: flex;
@@ -130,21 +134,29 @@
         justify-content: center;
         flex-basis: 33.33%;
     }
+
+    .jn-footer__divider {
+        margin: 0 15px;
+    }
 }
 
 @media (min-width: 992px) {
     .join-newsletter {
         padding: 110px 0 15px 0;
     }
-    .join-newsletter__container {
+
+    .join-newsletter__wrapper {
         padding: 0 40px;
     }
+
     .header__jn-title {
         font-size: 28px;
     }
+
     .header__jn-subtitle {
         font-size: 32px;
-    } 
+    }
+
     .join-newsletter__footer {
         margin-top: 50px;
     }

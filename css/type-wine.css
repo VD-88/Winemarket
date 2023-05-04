@@ -1,0 +1,31 @@
+@media (min-width: 480px) {
+    .type-wine {
+    display: grid;
+    font-family: var(--font-for-subtitle);
+    grid-template-columns: 1fr 1fr;
+        }
+}
+.type-wine__red {
+    background-image: url(../img/red-wine.jpg);
+    background-size: cover;
+    background-position: 50%;
+    text-align: left;
+    min-height: 435px;
+    min-width: 375px;
+    }
+.type-wine__white {
+    background-image: url(../img/white-wine.jpg);
+    background-size: cover;
+    background-position: 50%;
+    text-align: left;
+    min-height: 435;
+    min-width: 375;
+}
+.type-wine__discount {
+    background-image: url(../img/discount.png);
+    background-size: cover;
+    background-position: 100%;
+    text-align: left;
+    min-height: 435;
+    min-width: 375;   
+}

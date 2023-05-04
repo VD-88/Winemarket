@@ -69,11 +69,13 @@
 .craft-wines__red {
     display: grid;
     justify-items: center;
+    margin-bottom: 150px;
 }
 
 .craft-wines__white {
     display: grid;
     justify-items: center;
+    margin-bottom: 150px;
 }
 
 .wine-item {

@@ -1,31 +1,69 @@
 <!--Volodymyr Dukhanin-->
-<section class="faq">
-    <h2 class="faq__title">FAQ</h2>
-    <p class="faq__have-a-question">Have a Question?</p>
-    <img src="img/header-decor.svg" alt="" class="faq__separator">
-    <div class="faq__accordeon">
-        <li>
-            <h3>Are you a wholesale wine supplier?</h3>
-            <p>Our winery produces craft wine. Bulk orders are possible, but lots cannot be large.</p>
-        </li>
-        <li>
-            <h3>Do you ship wine within the USA?</h3>
-            <p>Yes, we ship your orders to any state and city in the United States, as well as abroad.</p>
-        </li>
-        <li>
-            <h3>How many varieties are there in your winery?</h3>
-            <p>Our winery offers wine-lovers more than 10 different varieties of wines with different aging periods.</p>
-        </li>
-        <li>
-            <h3>Do you advise on the choice of wine?</h3>
-            <p>Yes. Our winery experts will tell you more about the varieties and help you choose the best option for you.</p>
-        </li>
-        <li>
-            <h3>Where are your vineyards located? </h3>
-            <p>We are located in the Napa Valley, America's most famous wine region.</p>
-        </li>
-    </div>
-    <aside class="wine-picture">
+<section class="faq container">
+    <div class="faq__accordion">
+      <div class="container">
+        <h2 class="faq__title">FAQ</h2>
+        <p class="faq__have-a-question">Have a Question?</p>
+        <img src="img/header-decor.svg" alt="" class="faq__separator">
+      
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Are you a wholesale wine supplier?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Our winery produces craft wine. Bulk orders are possible, but lots cannot be large.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Do you ship wine within the USA?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes, we ship your orders to any state and city in the United States, as well as abroad.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How many varieties are there in your winery?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Our winery offers wine-lovers more than 10 different varieties of wines with different aging periods.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                Do you advise on the choice of wine?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes. Our winery experts will tell you more about the varieties and help you choose the best option for you.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                Where are your vineyards located?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">We are located in the Napa Valley, America's most famous wine region.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="wine-picture">
         <img src="img/pinot-noir.png" alt="wine-bottle">
-    </aside>
-</section>
+      </aside>
+    </div>
+
+</section> 
+
+
