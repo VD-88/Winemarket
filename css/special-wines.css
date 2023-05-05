@@ -43,6 +43,29 @@
     justify-content: flex-end;
     padding: 0 30px 40px 40px;
 }
+
+.description-wines__title {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+}
+
+.description-wines__line{
+    border: none; /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58); /* Колір лінії */
+    color: rgb(200, 105, 58); /* Колір лінії для IE6-7 */
+    height: 2px;
+    width: 40px; /*довжина */
+    size: 100px; /*товщина*/
+    
+
+}
+
+.description-wines__text {
+    font-family: var(--font-for-subtitle);
+    font-size: 16px;
+    color: rgb(137, 128, 130);
+}
+
 .description-wines__batton {
     text-decoration: none;
     color: white;
@@ -53,19 +76,6 @@
 .description-wines__batton:hover {
     text-decoration: underline;
 }
-
-.description-wines__title {
-    font-family: var(--font-for-subtitle);
-    font-size: 22px;
-}
-
-.description-wines__text {
-    font-family: var(--font-for-subtitle);
-    font-size: 16px;
-    color: rgb(137, 128, 130);
-}
-
-
 
 
 
@@ -114,6 +124,9 @@
     margin: 0 auto;
     /* object-fit: contain; */
     /* object-position: 50% 50%; */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-wine__text {
@@ -135,29 +148,46 @@
     vertical-align: middle;
     width: 230px;
     height: 300px;
-    margin: 20px;
-    padding: 20px;
-
+    margin: 7px;
+    padding: 0px;
 }
 
-
 .about-wine__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    display: flex;
+    gap: 50px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-column-gap: 20px; */
+
 }
 
 .about-wine__block-first {
     display: inline-block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
+.about-wine__block-second {
+    display: inline-block;
+    /* vertical-align: middle; */
+}
 
-@media (max-width: 767px) {
-    .about-wine__block-image {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.about-wine__title {
+    font-size: 22px;
+    font-family: var(--font-for-subtitle);
+}
+
+.about-wine__line {
+    border: none; /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58); /* Колір лінії */
+    color: rgb(200, 105, 58); /* Колір лінії для IE6-7 */
+    height: 2px; /*висота*/
+    width: 40px; /*довжина */
+    size: 100px; /*товщина*/
+}
+
+.about-wine__paragraph {
+    color: rgb(137, 128, 130);
+    font-size: 16px;
+    font-family: var(--font-main);
 }
 
 
@@ -190,19 +220,73 @@
     }
 }
 
-.about-wine__title {
-    font-size: inherit;
-    font-family: var(--font-for-subtitle);
+
+
+/* @media (max-width: 1180px) {
+    .about-wine__block-image {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
-.about-wine__paragraph {
-    color: rgb(137, 128, 130);
-    font-size: inherit;
-    font-family: var(--font-main);
-}
-
-/* .descr__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+@media (min-width: 765px) {
+    .about-wine__block {
+        width: 45%;
+        flex-wrap: wrap;
+    }
 } */
+
+
+
+
+
+@media (min-width: 768px) {
+    .about-wine__block-image{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .about-wine__block-first{
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .about-wine__block-second {
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 425px) {
+    .about-wine__block-image{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .about-wine__block-first{
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .about-wine__block-second {
+        display: block;
+        flex-wrap: wrap;
+    }
+} 
+
+@media (min-width: 375px) {
+    .about-wine__block-image{
+        display: inline-block;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .about-wine__block-first{
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .about-wine__block-second {
+        display: block;
+        flex-wrap: wrap;
+    }
+} 
