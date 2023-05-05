@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    padding: 90px 0 90px 0;
 }
 
 .description-wines__container-corkscrew-cheese {
@@ -12,6 +13,10 @@
     background-position: 50% 70%;
     min-height: 477px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 
 }
 
@@ -21,6 +26,10 @@
     background-position: 50% 70%;
     min-height: 477px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 }
 
 .description-wines__container-wine-grape {
@@ -29,9 +38,40 @@
     background-position: 50% 70%;
     min-height: 477px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
+}
+.description-wines__batton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-main);
 }
 
-@media (min-width: 500px) {
+.description-wines__batton:hover {
+    text-decoration: underline;
+}
+
+.description-wines__title {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+}
+
+.description-wines__text {
+    font-family: var(--font-for-subtitle);
+    font-size: 16px;
+    color: rgb(137, 128, 130);
+}
+
+
+
+
+
+
+
+/* @media (min-width: 500px) {
     .description-wines__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -46,16 +86,20 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
     }
-}
+} */
+
+
+
+
+
 
 .about-wine__container-natural {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     flex-direction: column;
     vertical-align: middle;
-
-
 }
 
 .about-wine__name {
@@ -65,23 +109,26 @@
 }
 
 .about-wine__svg {
-    display: flex;
     width: 32%;
     justify-content: center;
+    margin: 0 auto;
+    /* object-fit: contain; */
+    /* object-position: 50% 50%; */
 }
 
 .about-wine__text {
     font-family: var(--font-main);
-    font-size: inherit;
+    font-size: 18px;
     text-align: center;
-
+    padding-top: 40px;
 }
 
-/* @import (min-width: 81px) {
-    .about-wine__container-natural {
-
-    }
-} */
+.about-wine__block-image {
+    display: flex;
+    text-align: left;
+    margin: auto;
+    padding-top: 60px;
+}
 
 .about-wine__image {
     display: inline-block;
@@ -93,10 +140,6 @@
 
 }
 
-.about-wine__block-image {
-    display: flex;
-    text-align: left;
-}
 
 .about-wine__block {
     display: grid;
@@ -117,12 +160,8 @@
     }
 }
 
-@media (min-width: 767px) {
-    .about-wine__block-image {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 
+@media (min-width: 767px) {
     .description-wines__container-corkscrew-cheese {
         width: 45%
     }
@@ -162,8 +201,8 @@
     font-family: var(--font-main);
 }
 
-.descr__card {
+/* .descr__card {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
+} */
