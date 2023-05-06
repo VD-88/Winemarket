@@ -49,14 +49,19 @@
     font-size: 22px;
 }
 
-.description-wines__line{
-    border: none; /* Прибираємо кордон */
-    background-color: rgb(200, 105, 58); /* Колір лінії */
-    color: rgb(200, 105, 58); /* Колір лінії для IE6-7 */
+.description-wines__line {
+    border: none;
+    /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58);
+    /* Колір лінії */
+    color: rgb(200, 105, 58);
+    /* Колір лінії для IE6-7 */
     height: 2px;
-    width: 40px; /*довжина */
-    size: 100px; /*товщина*/
-    
+    width: 40px;
+    /*довжина */
+    size: 100px;
+    /*товщина*/
+
 
 }
 
@@ -76,10 +81,6 @@
 .description-wines__batton:hover {
     text-decoration: underline;
 }
-
-
-
-
 
 /* @media (min-width: 500px) {
     .description-wines__container {
@@ -119,7 +120,7 @@
 }
 
 .about-wine__svg {
-    width: 32%;
+    height: 32px;
     justify-content: center;
     margin: 0 auto;
     /* object-fit: contain; */
@@ -137,37 +138,36 @@
 }
 
 .about-wine__block-image {
-    display: flex;
-    text-align: left;
     margin: auto;
     padding-top: 60px;
 }
 
-.about-wine__image {
-    display: inline-block;
-    vertical-align: middle;
-    width: 230px;
-    height: 300px;
-    margin: 7px;
-    padding: 0px;
+.about-wine__container-image {
+    width: 90%;
 }
 
 .about-wine__block {
     display: flex;
-    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     /* grid-template-columns: 1fr 1fr; */
     /* grid-column-gap: 20px; */
 
 }
 
-.about-wine__block-first {
-    display: inline-block;
-    /* vertical-align: middle; */
+.about-wine__block-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
 }
 
-.about-wine__block-second {
-    display: inline-block;
-    /* vertical-align: middle; */
+.about-wine__container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about-wine__title {
@@ -176,18 +176,25 @@
 }
 
 .about-wine__line {
-    border: none; /* Прибираємо кордон */
-    background-color: rgb(200, 105, 58); /* Колір лінії */
-    color: rgb(200, 105, 58); /* Колір лінії для IE6-7 */
-    height: 2px; /*висота*/
-    width: 40px; /*довжина */
-    size: 100px; /*товщина*/
+    border: none;
+    /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58);
+    /* Колір лінії */
+    color: rgb(200, 105, 58);
+    /* Колір лінії для IE6-7 */
+    height: 2px;
+    /*висота*/
+    width: 40px;
+    /*довжина */
+    size: 100px;
+    /*товщина*/
 }
 
 .about-wine__paragraph {
     color: rgb(137, 128, 130);
     font-size: 16px;
     font-family: var(--font-main);
+    text-align: left;
 }
 
 
@@ -202,6 +209,18 @@
 
     .description-wines__container-wine-grape {
         width: 45%
+    }
+
+    .about-wine__block {
+        justify-content: space-between;
+    }
+
+    .about-wine__container-image {
+        width: 30%;
+    }
+
+    .about-wine__block-item {
+        width: 30%;
     }
 }
 
@@ -219,74 +238,3 @@
         width: 30%
     }
 }
-
-
-
-/* @media (max-width: 1180px) {
-    .about-wine__block-image {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 765px) {
-    .about-wine__block {
-        width: 45%;
-        flex-wrap: wrap;
-    }
-} */
-
-
-
-
-
-@media (min-width: 768px) {
-    .about-wine__block-image{
-        display: inline-block;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .about-wine__block-first{
-        display: block;
-        flex-wrap: wrap;
-    }
-
-    .about-wine__block-second {
-        display: block;
-        flex-wrap: wrap;
-    }
-}
-
-@media (min-width: 425px) {
-    .about-wine__block-image{
-        display: inline-block;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .about-wine__block-first{
-        display: block;
-        flex-wrap: wrap;
-    }
-
-    .about-wine__block-second {
-        display: block;
-        flex-wrap: wrap;
-    }
-} 
-
-@media (min-width: 375px) {
-    .about-wine__block-image{
-        display: inline-block;
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    .about-wine__block-first{
-        display: block;
-        flex-wrap: wrap;
-    }
-
-    .about-wine__block-second {
-        display: block;
-        flex-wrap: wrap;
-    }
-} 
