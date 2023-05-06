@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 50%;
     font-family: var(--font-main);
     justify-content: center;
     gap: 20px;
@@ -15,27 +16,86 @@
 .type-wine__red {
     background-image: url(../img/red-wine.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 50% 30%;
     min-height: 435px;
-    width: 320px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 }
 
 .type-wine__white {
     background-image: url(../img/white-wine.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 50% 30%;
     min-height: 435px;
-    min-width: 320px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 }
 
 .type-wine__discount {
     background-image: url(../img/discount.png);
-    background-size: cover;
-    background-position: 100%;
+    background-size: 80% auto;
+    background-position: right;
     width: 100%;
     background-color: var(--color-special);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 40px 40px 30px;
 }
 
-@media (min-width: 768px) {
+.type-wine__button {
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--color-main);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--color-special);
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+.shop-white-wines {
+    text-align: center;
+    font-family: var(--font-main);
+    color: var(--color-main);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--color-special);
+    width: 150px;
+    height: 40px;
+    border: 0;
+}
+
+.join {
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 500px;
+    background-color: transparent;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border: 3px solid #fff;
+}
+
+.color-divider {
+    border: none;
+    background-color: var(--color-special);
+    height: 2px;
+    width: 40px;
+    size: 100px;
+}
+
+@media (width: 768px) {
+
+}
+@media (min-width:992px) {
 
 }
