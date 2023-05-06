@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
     font-family: var(--font-main);
     justify-content: center;
-    gap: 20px;
+    gap: 50px 30px;
 }
 
 .type-wine__title {
@@ -13,15 +12,24 @@
     font-size: 30px;
 }
 
+.type-wine__top-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap;
+    gap: 50px 0px;
+}
+
 .type-wine__red {
     background-image: url(../img/red-wine.jpg);
     background-size: cover;
     background-position: 50% 30%;
-    min-height: 435px;
-    width: 50%;
+    min-height: 375px; 
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0 30px 40px 40px;
 }
 
@@ -29,27 +37,30 @@
     background-image: url(../img/white-wine.jpg);
     background-size: cover;
     background-position: 50% 30%;
-    min-height: 435px;
-    width: 50%;
+    min-height: 375px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 0 30px 40px 40px;
 }
 
 .type-wine__discount {
     background-image: url(../img/discount.png);
-    background-size: 80% auto;
-    background-position: right;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% center;
+    width: 95%;
+    min-height: 375px;
     background-color: var(--color-special);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 40px 40px 40px 30px;
 }
 
 .type-wine__button {
+    text-decoration: none;
     text-align: center;
     font-family: var(--font-main);
     color: var(--color-main);
@@ -93,9 +104,18 @@
     size: 100px;
 }
 
-@media (width: 768px) {
+@media (min-width: 768px) {
+    .type-wine__top-two {
+        justify-content: space-between;
+    }
 
-}
-@media (min-width:992px) {
+    .type-wine__red {
+        width: 48%;
+    }
+
+    .type-wine__white {
+        width: 48%;
+    }
+
 
 }
