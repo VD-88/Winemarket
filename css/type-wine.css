@@ -99,10 +99,12 @@
 }
 
 .join {
+    text-decoration: none;
+    line-height: 40px;
     text-align: center;
     font-family: var(--font-main);
     font-size: 15px;
-    font-weight: 500px;
+    font-weight: 800px;
     background-color: transparent;
     color: #fff;
     width: 120px;
