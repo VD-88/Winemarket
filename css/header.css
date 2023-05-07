@@ -41,7 +41,7 @@
 .header__socials {
     display: flex;
     gap: 13px;
-    margin: 0;
+    margin-left: 100px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -52,7 +52,7 @@
     width: 220px;
     height: auto;
     display: block;
-    margin-left: 400px;
+    margin-left: 300px;
     padding: 0;
     border: 0;
     object-fit: cover;
@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: right;
     margin-top: 200px;
+    margin-left: 480px;
 }
 
 .header__banner-description {
@@ -124,6 +125,11 @@
     color: rgb(38, 30, 28);
 }
 
+.links {
+    margin-left: 400px;
+    display: flex;
+}
+
 .navbar-nav .nav-link {
     color: white;
 }
@@ -133,7 +139,8 @@
 }
 
 .navbar {
-    width: 100%;
+    margin-left: -400px;
+    width: 100vw;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
     scroll-behavior: auto;
@@ -155,8 +162,41 @@
     margin-right: 38px;
 }
 
-@media (min-width: 768px) {
-    .header__block {
-        margin-left: 400px;
+@media (min-width: 767px) {
+    .header__banner-text {
+        font-size: 21px;
     }
-}    
+
+    .header__banner-title {
+        font-size: 41px;
+    }
+
+    .navbar {
+        width: 100vw;
+        overflow: hidden;
+        scroll-behavior: auto;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header__banner-text {
+        font-size: 28px;
+    }
+
+    .header__banner-title {
+        font-size: 48px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .header__banner-text {
+        font-size: 28px;
+    }
+
+    .header__banner-title {
+        font-size: 72px;
+    }
+}
