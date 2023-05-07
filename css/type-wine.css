@@ -60,7 +60,7 @@
     margin-bottom: 40px;
 }
 
-.type-wine__button {
+.shop-red-wines {
     text-decoration: none;
     text-align: center;
     line-height: 40px;
@@ -75,7 +75,7 @@
     border-radius: 3px;
 }
 
-.type-wine__button:hover {
+.shop-red-wines:hover {
     filter:brightness(80%);
 }
 

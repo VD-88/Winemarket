@@ -4,27 +4,27 @@
     <div class="craft-wines__decor">
         <img src="img/grape-decor.svg" alt="grape decor">
     </div>
-    <p class="craft-wines__subtitle">Select your favorite wine and buy it in a couple of clicks.</p>
+    <p id="buy-wine" class="craft-wines__subtitle">Select your favorite wine and buy it in a couple of clicks.</p>
     <div class="store">
         <ul class="nav nav-underline craft-wines__type" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active craft-wines__type_name" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Red</button>
+                <button class="nav-link active craft-wines__type_name" id="red-tab" data-bs-toggle="tab" data-bs-target="#red-tab-pane"
+                    type="button" role="tab" aria-controls="red-tab-pane" aria-selected="true">Red</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link craft-wines__type_name" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">White</button>
+                <button class="nav-link craft-wines__type_name" id="white-tab" data-bs-toggle="tab" data-bs-target="#white-tab-pane"
+                    type="button" role="tab" aria-controls="white-tab-pane" aria-selected="false">White</button>
             </li>
         </ul>
         <div class="craft-wines__line">
             <hr>
         </div>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            <div class="tab-pane fade show active" id="red-tab-pane" role="tabpanel" aria-labelledby="red-tab"
                 tabindex="0">
                 <div class="craft-wines__red"></div>
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="tab-pane fade" id="white-tab-pane" role="tabpanel" aria-labelledby="white-tab" tabindex="0">
                 <div class="craft-wines__white"></div>
             </div>
         </div>
