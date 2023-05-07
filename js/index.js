@@ -4,6 +4,7 @@ document.addEventListener("partialsLoaded", () => {
     import ('./carousel.js');
     import('./craft-wines.js');
     import('./pop-up.js');
-    import('./cart.js');
+    // import('./cart.js');
     import('./type-wine.js');
+    import('./cart-new.js');
 });

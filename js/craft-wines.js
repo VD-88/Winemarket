@@ -68,4 +68,3 @@ function populateProductPage(product) {
     newWindow.history.pushState(null, '', url.toString());
   };
 }
-
