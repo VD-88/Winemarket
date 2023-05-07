@@ -38,13 +38,6 @@
     object-position: 0% 50%;
 }
 
-.header__socials {
-    display: flex;
-    gap: 13px;
-    margin-left: 100px;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .header__logo-container {
     display: flex;
@@ -65,8 +58,8 @@
     justify-content: center;
     align-items: right;
     margin-top: 200px;
-    margin-left: 480px;
 }
+
 
 .header__banner-description {
     margin-bottom: 10px;
@@ -125,9 +118,12 @@
     color: rgb(38, 30, 28);
 }
 
-.links {
-    margin-left: 400px;
+.header__socials {
     display: flex;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .navbar-nav .nav-link {
@@ -139,16 +135,11 @@
 }
 
 .navbar {
-    margin-left: -400px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
     scroll-behavior: auto;
     display: flex;
-}
-
-.header__logo-container {
-    padding: 10px 0;
 }
 
 .header__navbar-container {
@@ -160,6 +151,21 @@
 
 .navbar-toggler {
     margin-right: 38px;
+}
+
+.header__logo-container {
+    display: flex;
+    justify-content: right;
+    width: 220px;
+    height: auto;
+    display: block;
+    margin-left: 400px;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 @media (min-width: 767px) {
@@ -198,5 +204,38 @@
 
     .header__banner-title {
         font-size: 72px;
+    }
+
+    .navbar {
+        margin-left: -400px;
+        width: 100vw;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        scroll-behavior: auto;
+        display: flex;
+    }
+
+    .header__block {
+        justify-content: center;
+        align-items: right;
+        margin-top: 200px;
+        margin-left: 480px;
+    }
+
+    .links {
+        margin-left: 400px;
+        display: flex;
+    }
+
+    .header__logo-container {
+        padding: 10px 0;
+    }
+
+    .header__socials {
+        display: flex;
+        gap: 13px;
+        margin-left: 100px;
+        padding: 0;
+        box-sizing: border-box;
     }
 }
