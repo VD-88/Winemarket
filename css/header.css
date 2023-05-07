@@ -38,13 +38,6 @@
     object-position: 0% 50%;
 }
 
-.header__socials {
-    display: flex;
-    gap: 13px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .header__logo-container {
     display: flex;
@@ -52,7 +45,7 @@
     width: 220px;
     height: auto;
     display: block;
-    margin-left: 400px;
+    margin-left: 300px;
     padding: 0;
     border: 0;
     object-fit: cover;
@@ -66,6 +59,7 @@
     align-items: right;
     margin-top: 200px;
 }
+
 
 .header__banner-description {
     margin-bottom: 10px;
@@ -124,6 +118,14 @@
     color: rgb(38, 30, 28);
 }
 
+.header__socials {
+    display: flex;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar-nav .nav-link {
     color: white;
 }
@@ -140,10 +142,6 @@
     display: flex;
 }
 
-.header__logo-container {
-    padding: 10px 0;
-}
-
 .header__navbar-container {
     position: absolute;
     top: 0;
@@ -155,8 +153,89 @@
     margin-right: 38px;
 }
 
-@media (min-width: 768px) {
-    .header__block {
-        margin-left: 400px;
+.header__logo-container {
+    display: flex;
+    justify-content: right;
+    width: 220px;
+    height: auto;
+    display: block;
+    margin-left: 400px;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+@media (min-width: 767px) {
+    .header__banner-text {
+        font-size: 21px;
     }
-}    
+
+    .header__banner-title {
+        font-size: 41px;
+    }
+
+    .navbar {
+        width: 100vw;
+        overflow: hidden;
+        scroll-behavior: auto;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header__banner-text {
+        font-size: 28px;
+    }
+
+    .header__banner-title {
+        font-size: 48px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .header__banner-text {
+        font-size: 28px;
+    }
+
+    .header__banner-title {
+        font-size: 72px;
+    }
+
+    .navbar {
+        margin-left: -400px;
+        width: 100vw;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.4);
+        scroll-behavior: auto;
+        display: flex;
+    }
+
+    .header__block {
+        justify-content: center;
+        align-items: right;
+        margin-top: 200px;
+        margin-left: 480px;
+    }
+
+    .links {
+        margin-left: 400px;
+        display: flex;
+    }
+
+    .header__logo-container {
+        padding: 10px 0;
+    }
+
+    .header__socials {
+        display: flex;
+        gap: 13px;
+        margin-left: 100px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}

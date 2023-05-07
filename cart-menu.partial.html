@@ -1,43 +1,16 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="container-cart">
-    <p class="container-cart__cart-title">Shopping cart</p>
-    <div class="container-cart__cart-class">
-        <div class="container-cart__cart-products">
-            <div class="container-cart__cart-product">
-                <img src="img/pinot-noir.png" alt="pinot wine">
-                <div class="container-cart__product-info">
-                    <h3 class="container-cart__product-name">Pinot Wine</h3>
-                    <h4 class="container-cart__product-price">$26.00</h4>
-                    <p class="container-cart__product-amount">Amount: <input value="1"></p>
-                    <p class="container-cart__product-remove">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
-                        <span class="container-cart__button-remove">Remove</span>
-                    </p>
-                </div>
-            </div>
-            <div class="container-cart__cart-product">
-                <img src="img/wine-bottle.png" alt="wine bottle">
-                <div class="container-cart__product-info">
-                    <h3 class="container-cart__product-name">Soave Wine</h3>
-                    <h4 class="container-cart__product-price">$23.00</h4>
-                    <p class="container-cart__product-amount">Amount: <input value="1"></p>
-                    <p class="container-cart__product-remove">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
-                        <span class="container-cart__button-remove">Remove</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-cart__cart-total">
-            <p>
-                <span>Total Price</span>
-                <span>$49.00</span>
-            </p>
-            <p>
-                <span>Numbers of Items</span>
-                <span>2</span>
-            </p>
-            <a href="#">Checkout</a>
-        </div>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<div class='nav-container'>
+    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+</div>
+
+<div class="cart">
+    <span class="cart-title">Your Cart</span>
+    <div class="cart-content">
     </div>
+    <div class="cart-total">
+        <div class="total-title">Total</div>
+        <div class="total-price">0.00USD</div>
+    </div>
+    <button type="button" class="btn-buy">Buy Now</button>
+    <i class='bx bx-x' id="close-cart"></i>
 </div>

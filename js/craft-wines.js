@@ -1,27 +1,21 @@
+import { Cart } from './cart-new.js';
+
 let products;
 
 async function loadData() {
   const response = await fetch('api/products.json');
   products = await response.json();
-  renderRedWines(products);
-  renderWhiteWines(products);
-  waitForClick();
+  renderWineCards(products, "red");
+  renderWineCards(products, "white");
+  addEventListeners();
 }
 loadData();
 
-function renderRedWines(products) {
-  const winesRed = document.querySelector('.craft-wines__red');
-  winesRed.innerHTML = '';
+function renderWineCards(products, type) {
+  const wineCards = document.querySelector(`.craft-wines__${type}`);
+  wineCards.innerHTML = '';
   for (const product of products) {
-    if (product.type === "red") winesRed.innerHTML += createProductHtml(product);
-  }
-}
-
-function renderWhiteWines(products) {
-  const winesRed = document.querySelector('.craft-wines__white');
-  winesRed.innerHTML = '';
-  for (const product of products) {
-    if (product.type === "white") winesRed.innerHTML += createProductHtml(product);
+    if (product.type === type) wineCards.innerHTML += createProductHtml(product);
   }
 }
 
@@ -33,22 +27,28 @@ function createProductHtml(product) {
                 <p class="wine-item__name">${product.title}</p>
                 <p class="wine-item__price">${product.price.toFixed(2)}USD</p>
                 <div class="wine-item__button">
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
+                    <button class="add-to-cart" data-id=${product.id}>Add to cart</button>
+                </div>                
             </article>`;
 }
 
-function waitForClick() {
+function addEventListeners() {
   const productCards = document.querySelectorAll('.craft-wines__item');
   productCards.forEach(card => {
     const smallImage = card.querySelector('.wine-item__picture');
+    const buyLink = card.querySelector('.add-to-cart');
     smallImage.addEventListener('click', () => {
       const productId = card.dataset.id;
       const product = products.find(p => p.id == productId);
       populateProductPage(product);
     });
+    buyLink.addEventListener('click', () => {
+      const productId = card.dataset.id;
+      const cart = new Cart();
+      cart.addProduct(productId);
+    })
   });
-};
+}
 
 function populateProductPage(product) {
   const newWindow = window.open('product-page.html');
@@ -68,3 +68,4 @@ function populateProductPage(product) {
     newWindow.history.pushState(null, '', url.toString());
   };
 }
+

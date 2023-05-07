@@ -1,52 +1,95 @@
 .description-wines {
     display: flex;
-    flex-direction: row ;
-    align-items: center;
-    padding: 105px 0 0 60px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
     flex-wrap: wrap;
-
-    
+    padding: 90px 0 90px 0;
 }
 
-.description-wines__container-corkscrew-cheese{
+.description-wines__container-corkscrew-cheese {
     background-image: url(../img/corkscrew-cheese.jpg);
     background-size: cover;
-    background-position: 50% 50%;
-    min-height: 500px;
-    width: 100;
-    margin: 20px;
-    padding: 20px;
+    background-position: 50% 70%;
+    min-height: 477px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
+
 }
 
-.description-wines__container-glass-two{
+.description-wines__container-glass-two {
     background-image: url(../img/glass-two.jpg);
     background-size: cover;
-    background-position: 50% 50%;
-    min-height: 500px;
-    width: 100;
-    margin: 20px;
-    padding: 20px;
-   
+    background-position: 50% 70%;
+    min-height: 477px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 }
 
-.description-wines__container-wine-grape{
+.description-wines__container-wine-grape {
     background-image: url(../img/wine-grape.jpg);
     background-size: cover;
-    background-position: 50% 50%;
-    min-height: 500px;
-    width: 100;
-    margin: 20px;
-    padding: 20px;
+    background-position: 50% 70%;
+    min-height: 477px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 30px 40px 40px;
 }
 
-@media (min-width: 500px) {
+.description-wines__title {
+    font-family: var(--font-for-subtitle);
+    font-size: 22px;
+}
+
+.description-wines__line {
+    border: none;
+    /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58);
+    /* Колір лінії */
+    color: rgb(200, 105, 58);
+    /* Колір лінії для IE6-7 */
+    height: 2px;
+    width: 40px;
+    /*довжина */
+    size: 100px;
+    /*товщина*/
+
+
+}
+
+.description-wines__text {
+    font-family: var(--font-for-subtitle);
+    font-size: 16px;
+    color: rgb(137, 128, 130);
+}
+
+.description-wines__batton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+
+.description-wines__batton:hover {
+    text-decoration: underline;
+}
+
+/* @media (min-width: 500px) {
     .description-wines__container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
-        
+
     }
-} 
+}
 
 @media (min-width: 900px) {
     .description-wines__container {
@@ -54,16 +97,20 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
     }
-} 
+} */
+
+
+
+
+
 
 .about-wine__container-natural {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
     flex-direction: column;
     vertical-align: middle;
-    
-
 }
 
 .about-wine__name {
@@ -73,70 +120,121 @@
 }
 
 .about-wine__svg {
-    display: flex;
-    width: 32%;
+    height: 32px;
     justify-content: center;
+    margin: 0 auto;
+    /* object-fit: contain; */
+    /* object-position: 50% 50%; */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-wine__text {
     font-family: var(--font-main);
-    font-size: inherit;
+    font-size: 18px;
     text-align: center;
-
+    padding-top: 40px;
 }
 
-@import (min-width: 81px) {
-    .about-wine__container-natural {
-
-    }
+.about-wine__block-image {
+    margin: auto;
+    padding-top: 60px;
 }
 
-
-.about-wine__image {
-    display: inline-block;
-    vertical-align: middle;
-    width: 230px;
-    height: 300px;
-    margin: 20px;
-    padding: 20px;
-    
-}
-
-.about-wine__block-image{
-    display: flex;
-    text-align: left;
+.about-wine__container-image {
+    width: 90%;
 }
 
 .about-wine__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-column-gap: 20px; */
+
 }
 
-.about-wine__block-first {
-    display: inline-block;
-    vertical-align: middle;
-   
-    
+.about-wine__block-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
 }
 
-@media (max-width: 767px) {
-    .about-wine__block-image {
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-    }
+.about-wine__container-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-
 
 .about-wine__title {
-    font-size: inherit;
+    font-size: 22px;
     font-family: var(--font-for-subtitle);
 }
 
+.about-wine__line {
+    border: none;
+    /* Прибираємо кордон */
+    background-color: rgb(200, 105, 58);
+    /* Колір лінії */
+    color: rgb(200, 105, 58);
+    /* Колір лінії для IE6-7 */
+    height: 2px;
+    /*висота*/
+    width: 40px;
+    /*довжина */
+    size: 100px;
+    /*товщина*/
+}
+
 .about-wine__paragraph {
-    color: rgb(137,128,130);
-    font-size: inherit;
+    color: rgb(137, 128, 130);
+    font-size: 16px;
     font-family: var(--font-main);
+    text-align: left;
+}
+
+
+@media (min-width: 767px) {
+    .description-wines__container-corkscrew-cheese {
+        width: 45%
+    }
+
+    .description-wines__container-glass-two {
+        width: 45%
+    }
+
+    .description-wines__container-wine-grape {
+        width: 45%
+    }
+
+    .about-wine__block {
+        justify-content: space-between;
+    }
+
+    .about-wine__container-image {
+        width: 30%;
+    }
+
+    .about-wine__block-item {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .description-wines__container-corkscrew-cheese {
+        width: 30%
+    }
+
+    .description-wines__container-glass-two {
+        width: 30%
+    }
+
+    .description-wines__container-wine-grape {
+        width: 30%
+    }
 }
