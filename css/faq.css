@@ -7,6 +7,21 @@
     border: 1px rgb(137, 128, 130);
 }
 
+.accordion-button.collapsed::after {
+    content: "+";
+    color: rgb(248, 240, 240);
+    font-size: 30px;
+    padding-left: 25px;
+    
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "−";
+    color: rgb(248, 240, 240);
+    font-size: 30px;
+    padding-left: 25px;
+}
+
 .accordion-button:focus {
     box-shadow: none;
 }
@@ -37,16 +52,8 @@
     border-color: rgb(137, 128, 130);
 }
 
-.accordion-button button i {
-    color: rgb(137, 128, 130);
-}
-
 .faq__have-a-question {
     font-size: 34px;
-}
-
-.accordion {
-    margin: 0px;
 }
 
 .faq__separator {
@@ -61,6 +68,15 @@
     font-size: 14px;
 }
 
+.faq__accordion {
+    margin-top: 50px;
+}
+
+.accordion {
+    --bs-accordion-btn-active-icon: ;
+    --bs-accordion-btn-icon: ;
+    --bs-accordion-btn-icon-transform: ;
+}
 
 @media (min-width: 768px) {
     .faq__accordion {
