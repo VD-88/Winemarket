@@ -57,22 +57,31 @@
     flex-direction: column;
     justify-content: center;
     padding: 40px 40px 40px 30px;
+    margin-bottom: 40px;
 }
 
 .type-wine__button {
     text-decoration: none;
     text-align: center;
+    line-height: 40px;
     font-family: var(--font-main);
     color: var(--color-main);
     font-size: 15px;
     font-weight: 500;
     background-color: var(--color-special);
-    width: 120px;
+    width: 140px;
     height: 40px;
     border: 0;
+    border-radius: 3px;
+}
+
+.type-wine__button:hover {
+    filter:brightness(80%);
 }
 
 .shop-white-wines {
+    text-decoration: none;
+    line-height: 40px;
     text-align: center;
     font-family: var(--font-main);
     color: var(--color-main);
@@ -82,6 +91,11 @@
     width: 150px;
     height: 40px;
     border: 0;
+    border-radius: 3px;
+}
+
+.shop-white-wines:hover {
+    filter:brightness(80%);
 }
 
 .join {
@@ -94,6 +108,12 @@
     width: 120px;
     height: 40px;
     border: 3px solid #fff;
+    border-radius: 3px;
+}
+
+.join:hover {
+    background-color: #fff;
+    color: rgb(38, 30, 28);
 }
 
 .color-divider {
