@@ -27,7 +27,7 @@ function createProductHtml(product) {
                 <p class="wine-item__name">${product.title}</p>
                 <p class="wine-item__price">${product.price.toFixed(2)}USD</p>
                 <div class="wine-item__button">
-                    <button class="btn-buy add-to-cart" data-id=${product.id}>Add to cart</button>
+                    <button class="add-to-cart" data-id=${product.id}>Add to cart</button>
                 </div>                
             </article>`;
 }
@@ -36,7 +36,7 @@ function addEventListeners() {
   const productCards = document.querySelectorAll('.craft-wines__item');
   productCards.forEach(card => {
     const smallImage = card.querySelector('.wine-item__picture');
-    const buyLink = card.querySelector('.btn-buy');
+    const buyLink = card.querySelector('.add-to-cart');
     smallImage.addEventListener('click', () => {
       const productId = card.dataset.id;
       const product = products.find(p => p.id == productId);
