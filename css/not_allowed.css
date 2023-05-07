@@ -27,3 +27,9 @@ p {
     padding-top: 237px;
     padding-bottom: 230px;
 }
+
+@media (max-width: 768px) {
+    .not-allowed {
+        padding-top: 150px;
+    }
+}
