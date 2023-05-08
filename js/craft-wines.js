@@ -1,4 +1,5 @@
 import { Cart } from './cart-new.js';
+import { showAlert } from './alert.js';
 
 let products;
 
@@ -49,8 +50,14 @@ function addEventListeners() {
     });
     buyLink.addEventListener('click', () => {
       const productId = card.dataset.id;
-      const cart = new Cart();
-      cart.addProduct(productId);
+      const product = products.find(p => p.id == productId);
+      if (product.quantity > 0) {
+        const cart = new Cart();
+        cart.addProduct(productId);
+        showAlert(`${product.title} was added to cart!`);
+      } else {
+        showAlert(`${product.title} is currently out of stock`, false);
+      }
     })
   });
 }

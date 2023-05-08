@@ -7,5 +7,6 @@ document.addEventListener("partialsLoaded", () => {
     // import('./cart.js');
     import('./type-wine.js');
     import('./cart-new.js');
-    import('./slider.js')
+    import('./slider.js');
+    import('./alert.js');
 });
