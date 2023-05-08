@@ -22,7 +22,12 @@ function renderWineCards(products, type) {
 function createProductHtml(product) {
   return `<article class="craft-wines__item wine-item" data-id=${product.id}>
               <div class="wine-item__link">
-                <img class="wine-item__picture" src="${product.smallImage}" alt="${product.title}">
+                <div class="link__container">
+                  <img class="wine-item__picture" src="${product.smallImage}" alt="${product.title}">
+                  <div class="wine-item__more-info">
+                    <p class="wine-item__info-text">Show more</p>
+                  </div>
+                </div>  
               </div>
                 <p class="wine-item__name">${product.title}</p>
                 <p class="wine-item__price">${product.price.toFixed(2)}USD</p>
@@ -35,7 +40,7 @@ function createProductHtml(product) {
 function addEventListeners() {
   const productCards = document.querySelectorAll('.craft-wines__item');
   productCards.forEach(card => {
-    const smallImage = card.querySelector('.wine-item__picture');
+    const smallImage = card.querySelector('.link__container');
     const buyLink = card.querySelector('.add-to-cart');
     smallImage.addEventListener('click', () => {
       const productId = card.dataset.id;
@@ -68,4 +73,3 @@ function populateProductPage(product) {
     newWindow.history.pushState(null, '', url.toString());
   };
 }
-

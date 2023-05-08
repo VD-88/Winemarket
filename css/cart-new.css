@@ -1,3 +1,127 @@
+/* 
+.modal-body {
+    padding: 1rem;
+}
+  
+.cart-product-list-container {
+    margin-bottom: 1rem;
+}
+  
+.cart-product-list-container .row {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.cart-product-list-container .row .col-5,
+.cart-product-list-container .row .col-3,
+.cart-product-list-container .row .col-2 {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+  
+.cart-product-list-container .row .col-1 {
+    text-align: center;
+}
+  
+.cart-product-list-container .row .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+  
+.cart-product-list-container .row .plus {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+  
+.cart-product-list-container .row .plus:focus,
+.cart-product-list-container .row .plus:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+  
+.cart-product-list-container .row .minus {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+  
+.cart-product-list-container .row .minus:focus,
+.cart-product-list-container .row .minus:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+  
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+  
+.cart-footer .cart-total {
+    font-weight: bold;
+}
+  
+.cart-footer button {
+    font-size: 0.875rem;
+}
+  
+.form-contacts {
+    margin-top: 1rem;
+}
+  
+.form-group {
+    margin-bottom: 1rem;
+}
+  
+.form-group label {
+    font-weight: bold;
+}
+  
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+  
+.btn-primary {
+    color: var(--color-main);
+    background-color: var(--color-for-cart);
+    border-color: var(--color-for-cart);
+}
+  
+.btn-primary:focus,
+.btn-primary:hover {
+    color: var(--color-main);
+    background-color: var(--color-for-cart);
+    border-color: var(--color-for-cart);
+}
+   */ 
 .plus {
     color: var(--color-main);
 }
