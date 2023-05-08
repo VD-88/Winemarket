@@ -1,3 +1,7 @@
+.faq {
+    margin-bottom: 100px;
+}
+
 .accordion-button:not(.collapsed) {
     font-family: var(--font-for-subtitle);
     font-size: 22px;
