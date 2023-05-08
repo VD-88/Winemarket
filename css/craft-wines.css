@@ -64,7 +64,7 @@
     margin: 0px 50px 30px 50px;
     border: none;
     height: 1px;
-    width: 80vw;
+    /* width: 80vw; */
 }
 
 .craft-wines__red {
@@ -212,12 +212,12 @@
 
     .craft-wines__red {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px 100px;
+        grid-gap: 40px 80px;
     }
 
     .craft-wines__white {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px 100px;
+        grid-gap: 40px 80px;
     }
 
     .craft-wines__line {
