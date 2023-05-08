@@ -127,4 +127,5 @@
 
 .py-5 {
   background-color: var(--color-background-join-newsletter);
+  padding: 0;
 }
