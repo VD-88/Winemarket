@@ -1,12 +1,17 @@
-      .container{
+      .nav-link {
+      text-decoration: none;
+      }
+
+      .container {
         max-width: 1200px;
       }
-      .footer-subscribe{
+
+      .footer-subscribe {
         padding-top: 110px;
         padding-bottom: 15px;
       }
 
-      .footer{
+      .footer {
         background-color: #1a1512;
         color: white;
       }
@@ -17,9 +22,9 @@
       }
 
       .subscribe-input {
-        border-color: #25211f; 
-        background-color: #25211f; 
-        color:white;
+        border-color: #25211f;
+        background-color: #25211f;
+        color: white;
       }
 
       .subscribe-input::placeholder {
@@ -27,34 +32,39 @@
         opacity: .54;
       }
 
-      .subscribe-input:focus{
-        background-color: #25211f; 
-        color:white;
+      .subscribe-input:focus {
+        background-color: #25211f;
+        color: white;
       }
 
-      .footer-rights{
+      .footer-rights {
         font-size: 15px;
         background-color: rgb(19, 15, 14);
       }
-      .footer-list-title{
+
+      .footer-list-title {
         font-size: 22px;
         line-height: 1.5;
-        font-family: "Prata"serif;
+        font-family: "Prata" serif;
         font-weight: 400;
       }
-      .w-divider-component-wrapper{
+
+      .w-divider-component-wrapper {
         display: flex;
         padding: 15px 0;
       }
-      .list-unstyled li{
+
+      .list-unstyled li {
         margin-right: 7.5px;
         margin-left: 7.5px;
         margin-bottom: 15px;
       }
-      .list-unstyled li:first-child{
+
+      .list-unstyled li:first-child {
         margin-left: 0;
       }
-      .list-unstyled li a{
+
+      .list-unstyled li a {
         width: 30px;
         height: 30px;
         color: #c8693a;
@@ -75,57 +85,66 @@
         align-items: center;
         cursor: pointer;
       }
-      .list-unstyled li a:hover{
+
+      .list-unstyled li a:hover {
         color: var(--bs-btn-hover-color);
         background-color: #c8693a;
         border-color: #c8693a;
       }
+
       .instagram-gallery {
         display: flex;
         flex-wrap: wrap;
       }
-      .instagram-gallery .gallery{
+
+      .instagram-gallery .gallery {
         flex: 0 0 33.333333%;
       }
-      @media (max-width: 767px){
+
+      @media (max-width: 767px) {
         .footer-info {
-          -webkit-box-align: stretch!important;
-          -webkit-align-items: stretch!important;
-          -ms-flex-align: stretch!important;
-          align-items: stretch!important;
-          -webkit-box-pack: center!important;
-          -webkit-justify-content: center!important;
-          -ms-flex-pack: center!important;
-          justify-content: center!important;
-          text-align: center!important;
+          -webkit-box-align: stretch !important;
+          -webkit-align-items: stretch !important;
+          -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+          -webkit-box-pack: center !important;
+          -webkit-justify-content: center !important;
+          -ms-flex-pack: center !important;
+          justify-content: center !important;
+          text-align: center !important;
         }
+
         .list-unstyled {
-          display: inline-flex!important;
+          display: inline-flex !important;
         }
-        .w-divider-component-wrapper{
+
+        .w-divider-component-wrapper {
           justify-content: center;
         }
-        .footer-rights{
-          -webkit-box-align: stretch!important;
-          -webkit-align-items: stretch!important;
-          -ms-flex-align: stretch!important;
-          align-items: stretch!important;
-          -webkit-box-pack: center!important;
-          -webkit-justify-content: center!important;
-          -ms-flex-pack: center!important;
-          justify-content: center!important;
-          text-align: center!important;
+
+        .footer-rights {
+          -webkit-box-align: stretch !important;
+          -webkit-align-items: stretch !important;
+          -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+          -webkit-box-pack: center !important;
+          -webkit-justify-content: center !important;
+          -ms-flex-pack: center !important;
+          justify-content: center !important;
+          text-align: center !important;
         }
+
         .instagram-gallery {
           display: flex;
           flex-wrap: wrap;
         }
-        .instagram-gallery .gallery{
+
+        .instagram-gallery .gallery {
           flex: 0 0 50%;
-        }  
+        }
       }
 
-.py-5 {
-  background-color: var(--color-background-join-newsletter);
-  padding: 0;
-}
+      .py-5 {
+        background-color: var(--color-background-join-newsletter);
+        padding: 0;
+      }
