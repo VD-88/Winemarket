@@ -6,4 +6,5 @@ document.addEventListener("partialsLoaded", () => {
     import('./pop-up.js');
     import('./cart.js');
     import('./type-wine.js');
+    import('./slider.js')
 });
