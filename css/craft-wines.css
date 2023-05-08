@@ -64,7 +64,7 @@
     margin: 0px 50px 30px 50px;
     border: none;
     height: 1px;
-    width: 80vw;
+    /* width: 80vw; */
 }
 
 .craft-wines__red {
@@ -90,8 +90,39 @@
     justify-items: center;
 }
 
-.wine-item__picture {
+
+.link__container {
+    position: relative;
     width: 40%;
+}
+
+.wine-item__more-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wine-item__link:hover .wine-item__more-info {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wine-item__info-text {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
 }
 
 .wine-item__name {
@@ -125,6 +156,7 @@
     height: 40px;
     border: 0px;
     border-radius: 3px;
+    transition: .5s ease;
 }
 
 .add-to-cart:hover {
@@ -180,12 +212,12 @@
 
     .craft-wines__red {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px 100px;
+        grid-gap: 40px 80px;
     }
 
     .craft-wines__white {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 40px 100px;
+        grid-gap: 40px 80px;
     }
 
     .craft-wines__line {
@@ -196,7 +228,7 @@
         width: 1px;
     }
 
-    .wine-item__picture {
+    .link__container {
         width: 120px;
     }
 

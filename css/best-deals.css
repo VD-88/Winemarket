@@ -1,6 +1,8 @@
 .best-deals {
     padding: 90px 0 50px 0;
     position: relative;
+    width: 95%;
+    margin-left: 20px;
 }
 
 .best-deals__container {

@@ -5,6 +5,8 @@
 .awards {
     text-align: center;
     padding: 50px 24px;
+    /* border-bottom: 1px solid var(--color-support);
+    border-top: 1px solid var(--color-support); */
 }
 
 .awards__title {
@@ -67,20 +69,35 @@
 .testimonials {
     padding-top: 50px;
     text-align: center;
+    margin-bottom: 180px;
 }
 
 .testimonials__title {
     font-family: var(--font-for-subtitle);
-    font-size: 34px;
+    font-size: 46px;
 }
 
 .testimonials-title__decor {
     height: 32px;
     margin-top: 25px;
 }
+
 .testimonials__subtitle {
     margin-top: 25px;
     font-size: 18px;
+}
+.testimonials__slider {
+    margin-bottom: 80px;
+    padding: 0 40px;
+}
+.slider-block {
+    margin-left: -10px;
+    overflow: hidden;
+}
+.slider-text {
+    color: var(--color-support);
+    padding-left: 10px;
+    margin: 40px 20px 40px 0;
 }
 @media (min-width: 768px) {
     .award-card {
@@ -88,14 +105,35 @@
         grid-template-columns: 12% 13% 10% 47%;
         align-items: center;
         column-gap: 35px;
-        row-gap: 100px;
         margin-top: 20px;
     }
-    .award-card p{
+
+    .award-card p {
         margin: 0;
     }
-    .award-card > :first-child {
+
+    .award-card> :first-child {
         margin-top: 0;
     }
-
+    .slider-text {
+        padding: 0 100px;
+    }
+}
+@media (min-width: 1024px) {
+    .award-card {
+        grid-template-columns: 13% 13% 10% 47%;
+        column-gap: 50px;
+    }
+    .awards__title {
+        font-size: 44px;
+    }
+}
+@media (min-width: 1440px) {
+    .award-card {
+        grid-template-columns: 15% 13% 10% 47%;
+        column-gap: 60px;
+    }
+    .awards__title {
+        font-size: 46px;
+    }
 }

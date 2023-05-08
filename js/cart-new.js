@@ -1,5 +1,5 @@
 import { ProductsService } from './products-service.js';
-// import { showAlert } from './alert.js';
+import { showAlert } from './alert.js';
 
 export class Cart {
   constructor() {
@@ -94,10 +94,10 @@ export class Cart {
         this.cart = {};
         this.saveCart();
         this.renderCart();
-        // showAlert("Thank you! ");
+        showAlert("Your order has been placed successfully");
         document.querySelector("#modal-cart .close-btn").click();
       })
-    //   .catch((error) => showAlert("There is an error: " + error, false));
+      .catch((error) => showAlert("There is an error: " + error, false));
   }
 }
 new Cart();

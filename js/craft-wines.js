@@ -1,4 +1,5 @@
 import { Cart } from './cart-new.js';
+import { showAlert } from './alert.js';
 
 let products;
 
@@ -22,7 +23,12 @@ function renderWineCards(products, type) {
 function createProductHtml(product) {
   return `<article class="craft-wines__item wine-item" data-id=${product.id}>
               <div class="wine-item__link">
-                <img class="wine-item__picture" src="${product.smallImage}" alt="${product.title}">
+                <div class="link__container">
+                  <img class="wine-item__picture" src="${product.smallImage}" alt="${product.title}">
+                  <div class="wine-item__more-info">
+                    <p class="wine-item__info-text">Show more</p>
+                  </div>
+                </div>  
               </div>
                 <p class="wine-item__name">${product.title}</p>
                 <p class="wine-item__price">${product.price.toFixed(2)}USD</p>
@@ -33,19 +39,23 @@ function createProductHtml(product) {
 }
 
 function addEventListeners() {
-  const productCards = document.querySelectorAll('.craft-wines__item');
+  const productCards = document.querySelectorAll('.craft-wines__item, .wine-list__card');
   productCards.forEach(card => {
-    const smallImage = card.querySelector('.wine-item__picture');
-    const buyLink = card.querySelector('.add-to-cart');
+    const smallImage = card.querySelector('.link__container, .item__picture');
+    const buyLink = card.querySelector('.add-to-cart, .add-to-cart-button');
+    const productId = card.dataset.id;
+    const product = products.find(p => p.id == productId);
     smallImage.addEventListener('click', () => {
-      const productId = card.dataset.id;
-      const product = products.find(p => p.id == productId);
       populateProductPage(product);
     });
     buyLink.addEventListener('click', () => {
-      const productId = card.dataset.id;
-      const cart = new Cart();
-      cart.addProduct(productId);
+      if (product.quantity > 0) {
+        const cart = new Cart();
+        cart.addProduct(productId);
+        showAlert(`${product.title} was added to cart!`);
+      } else {
+        showAlert(`${product.title} is currently out of stock`, false);
+      }
     })
   });
 }
@@ -53,6 +63,7 @@ function addEventListeners() {
 function populateProductPage(product) {
   const newWindow = window.open('product-page.html');
   newWindow.onload = () => {
+    newWindow.document.querySelector('.page__title').textContent = product.title;
     newWindow.document.querySelector('.info__name').textContent = product.title;
     newWindow.document.querySelector('.product__img').src = product.bigImage;
     newWindow.document.querySelector('.product__img').alt = product.title;
@@ -68,4 +79,3 @@ function populateProductPage(product) {
     newWindow.history.pushState(null, '', url.toString());
   };
 }
-
