@@ -39,18 +39,16 @@ function createProductHtml(product) {
 }
 
 function addEventListeners() {
-  const productCards = document.querySelectorAll('.craft-wines__item');
+  const productCards = document.querySelectorAll('.craft-wines__item, .wine-list__card');
   productCards.forEach(card => {
-    const smallImage = card.querySelector('.link__container');
-    const buyLink = card.querySelector('.add-to-cart');
+    const smallImage = card.querySelector('.link__container, .item__picture');
+    const buyLink = card.querySelector('.add-to-cart, .add-to-cart-button');
+    const productId = card.dataset.id;
+    const product = products.find(p => p.id == productId);
     smallImage.addEventListener('click', () => {
-      const productId = card.dataset.id;
-      const product = products.find(p => p.id == productId);
       populateProductPage(product);
     });
     buyLink.addEventListener('click', () => {
-      const productId = card.dataset.id;
-      const product = products.find(p => p.id == productId);
       if (product.quantity > 0) {
         const cart = new Cart();
         cart.addProduct(productId);
@@ -65,6 +63,7 @@ function addEventListeners() {
 function populateProductPage(product) {
   const newWindow = window.open('product-page.html');
   newWindow.onload = () => {
+    newWindow.document.querySelector('.page__title').textContent = product.title;
     newWindow.document.querySelector('.info__name').textContent = product.title;
     newWindow.document.querySelector('.product__img').src = product.bigImage;
     newWindow.document.querySelector('.product__img').alt = product.title;
