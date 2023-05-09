@@ -9,6 +9,7 @@ async function loadData() {
   renderWineCards(products, "red");
   renderWineCards(products, "white");
   addEventListeners();
+  productPageListener();
 }
 loadData();
 
@@ -71,6 +72,8 @@ function populateProductPage(product) {
     newWindow.document.querySelector('.description__text').textContent = product.description;
     newWindow.document.querySelector('.info__price').textContent = `${product.price.toFixed(2)}USD`;
     newWindow.document.querySelector('.info__stock').textContent = product.quantity > 0 ? 'In stock' : 'Out of stock';
+    newWindow.document.querySelector('.product__info_form').dataset.id = product.id;
+    newWindow.document.querySelector('.form__button').dataset.id = product.id;
     const stock = newWindow.document.querySelector('.info__stock');
     (stock.textContent === 'In stock') ? stock.style.color = 'var(--color-in-stock)' : stock.style.color = 'var(--color-out-of-stock)';
     const wineName = product.title.toLowerCase().replace(/ /g, '-');
