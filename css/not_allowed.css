@@ -33,3 +33,36 @@ p {
         padding-top: 150px;
     }
 }
+
+/*bonus section*/
+
+.bonus {
+    text-align: center;
+}
+
+.bonus__title-text {
+    margin-top: 0;
+}
+
+.bonus__game-title {
+    font-size: 35px;
+    color: rgb(238, 208, 40);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.bonus__game-answer-two {
+    margin-top: 10px;
+}
+
+.bonus__game-question-text {
+    font-size: 20px;
+    color:rgb(255, 255, 255)
+}
